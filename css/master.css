@@ -15,6 +15,10 @@ nav h1{
   color : rgba(0,0,0,.5);
 }
 
+.dropdown-content li a{
+  color: #42a5f5;
+}
+
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 	height: 64px;
 	line-height: 50px;
