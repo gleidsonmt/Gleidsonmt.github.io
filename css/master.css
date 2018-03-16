@@ -6,17 +6,30 @@
  * Made By MaterializeCSS.com
  */
 
-nav {
-  height: 50px;
-  height: 50px;
+@font-face {
+  font-family: 'Sao';
+  src: url("../fonts/sao/SAOUI.ttf");
 }
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
 
 nav h1{
   color : rgba(0,0,0,.5);
-}
-
-.dropdown-content li a{
-  color: #42a5f5;
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
@@ -27,12 +40,23 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 nav ul a,
 nav .brand-logo {
   color: #444;
-
 }
+
+
+footer.page-footer {
+  margin: 0;
+}
+
 
 p {
   line-height: 2rem;
 }
+
+
+.dropdown-content li a{
+  color: #42a5f5;
+}
+
 
 .button-collapse {
   color: #26a69a;
@@ -48,29 +72,9 @@ p {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
