@@ -85,3 +85,20 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
+
+.collection {
+  border-bottom: transparent;
+  border: transparent;
+}
+
+.collection .collection-item{
+  border: transparent;
+}
+
+.collection .collection-header {
+  font-size: 20px;
+}
+
+.collection ul {
+
+}
