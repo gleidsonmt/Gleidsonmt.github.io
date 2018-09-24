@@ -1,196 +1,116 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Gleidson Neves</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <title>Dashboard Template for Bootstrap</title>
 
-  <link rel="stylesheet" href="css/style.css"><link href="css/master.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="css/master.css">
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-  <link rel="stylesheet" href="image-gallery/css/style.css">
-  <!-- Resource style -->
-  <script src="js/modernizr.js"></script>
-  <!-- Modernizr -->
-
+  <!-- Custom styles for this template -->
+  <link href="css/master.css" rel="stylesheet">
 </head>
-<body>
 
-  <header>
-    <div class="navbar-fixed">
-      <nav class="white row" role="navigation">
-        <div class="nav-wrapper container">
-          <a style="font-family : 'Sao';" id="logo-container" href="#" class="brand-logo">GN</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li>
-              <a class="dropdown-button" href="#!" data-activates="dropdown1">
-                Menu
-                <i class="material-icons right">arrow_drop_down</i>
+<body>
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Gleidson Neves</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Orders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="shopping-cart"></span>
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="users"></span>
+                Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Reports
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Integrations
               </a>
             </li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a class="d-flex align-items-center text-muted" href="#">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Current month
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Last quarter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Social engagement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Year-end sale
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <!-- particles.js container -->
-
-      </div>
-
-      <!-- ./nav bar -->
-    </nav>
-    <div class="row">
-      <div id="particles-js" style="height : 250px; width : 100%;"></div>
-    </div>
-  </div>
+      </nav>
 
 
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li ><a  href="#!">Portifólio</a></li>
-    <li><a href="#!">Contato</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">Sobre</a></li>
-  </ul>
-  <!-- Nav hidden -->
-  <ul id="nav-mobile" class="side-nav">
-    <li><div class="user-view">
-      <div class="background">
-        <img class="responsive-img" src="img/back3.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="img/eu.jpg"></a>
-      <a href="#name"><span class="white-text name">Gleidson Neves da Silveira</span></a>
-      <a href="#email"><span class="white-text email">gleidisonmt@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+      feather.replace()
+      </script>
 
-</header>
-
-<main class="container">
-
-  <div class="row">
-    <section class="col s12 m12 l12">
-      <div class="row">
-        <div class="section center-align">
-          <h1 style="font-family : 'Sao';">JavaFx 8</h1>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div class="row">
-
-      <section class="cd-single-item">
-        <div class="cd-slider-wrapper">
-          <ul class="cd-slider">
-            <li class="selected"><img src="img/dashboard.png" alt="Product Image 1"></li>
-            <li><img src="img/dashboard.png" alt="Product Image 1"></li>
-            <li><img src="img/dashboard.png" alt="Product Image 2"></li>
-          </ul> <!-- cd-slider -->
-
-          <ul class="cd-slider-navigation">
-            <li><a href="#0" class="cd-prev inactive">Next</a></li>
-            <li><a href="#0" class="cd-next">Prev</a></li>
-          </ul> <!-- cd-slider-navigation -->
-
-          <a href="#0" class="cd-close">Close</a>
-        </div> <!-- cd-slider-wrapper -->
-
-        <div class="cd-item-info">
-          <h2>Dashboard JavaFx</h2>
-
-          <p>Dashboard contendo components diversos com bibliotecas como JFoenix, TilesFx, WorldFx.</p>
-
-          <button class="add-to-cart">Ver Projeto</button>
-        </div> <!-- cd-item-info -->
-      </section> <!-- cd-single-item -->
-
-
-      <section class="cd-single-item">
-        <div class="cd-slider-wrapper">
-          <ul class="cd-slider">
-            <li class="selected"><img src="img/basic.png" alt="Product Image 1"></li>
-            <li><img src="img/dashboard.png" alt="Product Image 1"></li>
-            <li><img src="img/dashboard.png" alt="Product Image 2"></li>
-          </ul> <!-- cd-slider -->
-
-          <ul class="cd-slider-navigation">
-            <li><a href="#0" class="cd-prev inactive">Next</a></li>
-            <li><a href="#0" class="cd-next">Prev</a></li>
-          </ul> <!-- cd-slider-navigation -->
-
-          <a href="#0" class="cd-close">Close</a>
-        </div> <!-- cd-slider-wrapper -->
-
-        <div class="cd-item-info">
-          <h2>GNDecorator</h2>
-
-          <p>Minha própria decoração baseada na antiga biblioteca undecorator, porém com várias melhorias</p>
-
-          <a href="https://gleidson28.github.io/GNDecorator/" class="add-to-cart">Ver Projeto</a>
-        </div> <!-- cd-item-info -->
-      </section> <!-- cd-single-item -->
-
-  </div>
-
-</main>
-
-<!-- header -->
-
-<!-- Footer  -->
-<footer class="page-footer blue light">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Sobre Mim</h5>
-        <p class="grey-text text-lighten-4">Apaixonado por javaFx e tecnologias UI.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Informações de contato</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!"><span>Skype: </span>gleidisonmt</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><span>Telefone: </span>(55) 62 99996-7431</a></li>
-
-          <li><a class="grey-text text-lighten-3" href="mailto:gleidisonmt@gmail.com"><span>Email: </span>gleidisonmt@gmail.com</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      <div class="col s12">
-          © 2018 Copyright Gleidson Neves da Silveira
-      </div>
-
-      <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-    </div>
-  </div>
-</footer>
-
-<!-- scripts -->
-<script src="particles.js"></script>
-<script src="js/app.js"></script>
-
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-
-<script src="image-gallery/js/jquery.mobile.min.js"></script>
-<script src="image-gallery/js/main.js"></script>
-
-</body>
-</html>
+    </body>
+    </html>
