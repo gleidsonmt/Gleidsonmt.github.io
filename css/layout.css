@@ -322,7 +322,13 @@ fieldset[disabled] .btn-theme {
 }
 
 .promo-block .promo-block-title {
-  font-size: 70px;
+  font-size: 80px;
+  color: #fff;
+  line-height: 1;
+}
+
+.promo-block .promo-block-sub {
+  font-size: 50px;
   color: #fff;
   line-height: 1;
 }
