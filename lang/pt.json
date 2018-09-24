@@ -1,4 +1,6 @@
 {
-    "example1" : "Example n1",
-    "example2" : "Example n2"
+    "about" : "Sobre",
+    "experience" : "Experiência",
+    "projects" : "Projetos",
+    "contact" : "Contato"
 }
