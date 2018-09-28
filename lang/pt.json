@@ -1,6 +1,9 @@
 {
-    "about" : "Sobre",
+    "about"      : "Sobre",
     "experience" : "Experiência",
-    "projects" : "Projetos",
-    "contact" : "Contato"
+    "projects"   : "Projetos",
+    "contact"    : "Contato",
+    "hire"       : "Contrate me",
+    "location"   : "Localização",
+    "phone"      : "Telefone"
 }
