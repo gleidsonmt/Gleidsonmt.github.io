@@ -294,7 +294,7 @@ fieldset[disabled] .btn-theme {
   width: 40px;
   height: 40px;
   font-size: 16px;
-  color: #fff;
+  color: #81848f;
   text-align: center;
   border-radius: 50%;
   vertical-align: middle;
@@ -305,8 +305,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .social-icons:hover {
-  color: #515769;
-  background: #fff;
+  color: #fff;
+  background: #2ad3b2;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -315,9 +315,58 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Promo Block]
 ------------------------------------------------------------------*/
+
+@media (max-width : 768px) {
+  .promo-block {
+    background-image: url("../img/fore1.jpg");
+  }
+
+  .img-outside {
+    opacity: 0;
+  }
+
+  .header .nav-item-child {
+    padding: 0px;
+  }
+}
+
+@media (max-width : 768px) {
+  .promo-block-title,
+  .promo-block .promo-block-sub,
+  .promo-block .promo-block-text,
+  .social-icons
+  {
+    color: white !important;
+  }
+
+  .social-icons:hover {
+    color : #2ad3b2 !important;
+    background: white !important;
+  }
+}
+
+@media (max-width : 1200px) {
+  .header .nav-item-child {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      /* line-height: 70px !important; */
+      padding: 12px !important;
+
+    }
+}
+
+@media (max-width : 768px) {
+  .promo-block-title,
+  .promo-block .promo-block-sub,
+  .promo-block .promo-block-text,
+  .list-inline   {
+      text-align: center !important;
+    }
+}
+
 .promo-block {
   padding: 200px 0 100px;
-  background-image: url("../img/fore1.jpg");
+  /* background-image: url("../img/Ativo 4.png"); */
   background-size : cover;
   background-repeat: no-repeat;
   /* background-image: repeating-linear-gradient(to bottom right, #52d3aa 0%, red 100%); */
@@ -326,13 +375,13 @@ fieldset[disabled] .btn-theme {
 
 .promo-block-title {
   font-size: 60px;
-  color: #fff;
+  color: #2ad3b2;
   line-height: 1;
 }
 
 .promo-block .promo-block-sub {
   font-size: 40px;
-  color: #fff;
+  color: #2ad3b2;
   line-height: 1;
 }
 
@@ -344,7 +393,7 @@ fieldset[disabled] .btn-theme {
 
 .promo-block .promo-block-text {
   font-size: 25px;
-  color: #fff;
+  color: #81848f;
 }
 
 .promo-block .promo-block-divider {
@@ -696,7 +745,7 @@ fieldset[disabled] .btn-theme {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: #fff;
+  color: #2ad3b2;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -719,7 +768,7 @@ fieldset[disabled] .btn-theme {
   left: 0;
   width: 9px;
   height: 2px;
-  background: white;
+  background: #2ad3b2;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -1084,6 +1133,7 @@ fieldset[disabled] .btn-theme {
   .container-sm {
     width: 970px;
   }
+
 }
 
 /*------------------------------------------------------------------
@@ -1493,4 +1543,21 @@ fieldset[disabled] .btn-theme {
 /* 4x3 Aspect Ratio */
 .iframe-container-4x3 {
   padding-top: 75%;
+}
+
+
+
+
+
+
+.header .nav-outside {
+  /* color : red; */
+}
+
+.img-outside {
+  position : absolute;
+  top : 0px;
+  right: 0px;
+  width: 55%;
+  /* height: 700px; */
 }

@@ -12,7 +12,6 @@ var translate = function (jsdata)
 	});
 }
 
-
 langCode = navigator.language.substr (0, 2);
 // langCode = 'en';
 
