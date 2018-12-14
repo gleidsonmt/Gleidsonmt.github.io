@@ -10,7 +10,7 @@
     Website:        http://www.keenthemes.com
     Premium:        Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
 ================================== -->
-<html lang="en" class="no-js">
+<html lang="pt-br" class="no-js">
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
@@ -69,10 +69,10 @@
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item "><a class="nav-item-child nav-item-hover"  href="#body">Home</a></li>
 
-                                <li class="js_nav-item nav-item"><a tkey="experiences" class="nav-item-child nav-item-hover" href="#experiences">Experiences</a></li>
-                                <li class="js_nav-item nav-item"><a tkey="projects" class="nav-item-child nav-item-hover" href="#work">Projects</a></li>
-                                <li class="js_nav-item nav-item"><a tkey="about" class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                                <li class="js_nav-item nav-item"><a tkey="contact" class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a tkey="lab" class="nav-item-child nav-item-hover" href="#lab">Lab</a></li>
+                                <!-- <li class="js_nav-item nav-item"><a tkey="projects" class="nav-item-child nav-item-hover" href="#work">Projects</a></li> -->
+                                <li class="js_nav-item nav-item"><a tkey="about" class="nav-item-child nav-item-hover" href="#about">Sobre</a></li>
+                                <li class="js_nav-item nav-item"><a tkey="contact" class="nav-item-child nav-item-hover" href="#contact">Contato</a></li>
                             </ul>
                         </div>
                     </div>
@@ -92,15 +92,15 @@
                         <div class="promo-block-divider">
 
                             <h1 class="promo-block-title">Gleidson <br/><h2 class="promo-block-sub">Neves da Silveira</h2></h1>
-                            <p class="promo-block-text">Back &amp; Front-end Developer</p>
+                            <p class="promo-block-text" tkey="developer">Desenvolvedor Back &amp; Front-end</p>
                             <!-- <h1 class=" promo-block-title">JavaFx Creator</h1> -->
 
                         </div>
                         <ul class="list-inline">
-                            <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="icon-social-github"></i></a></li>
-                            <li><a href="#" class="social-icons"><i class="icon-social-pinterest"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/gleidson.nevesdasilveira" class="social-icons"><i class="icon-social-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/gleidisonmt" class="social-icons"><i class="icon-social-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/Gleidson28" class="social-icons"><i class="icon-social-github"></i></a></li>
+                            <li><a target="_blank" href="https://br.pinterest.com/Gleidson28/" class="social-icons"><i class="icon-social-pinterest"></i></a></li>
                             <!-- <li><a href="#" class="social-icons"><i class="icon-social-dribbble"></i></a></li> -->
                             <!-- <li><a href="#" class="social-icons"><i class="icon-social-behance"></i></a></li> -->
                             <!-- <li><a href="#" class="social-icons"><i class="icon-social-linkedin"></i></a></li> -->
@@ -119,12 +119,12 @@
 
 
         <!-- Experience -->
-        <div id="experiences">
+        <div id="lab">
             <div class="bg-color-sky-light" data-auto-height="true">
                 <div class="container content-lg">
                   <div class="row">
                     <div class="col-sm-12 text-center">
-                      <h2 class=" margin-b-50">Experiences</h2>
+                      <h2 class=" margin-b-50" tkey="lab">Laboratório</h2>
                       <!-- <p>Batman would be jealous.</p> -->
                     </div>
                   </div>
@@ -140,11 +140,11 @@
                                 <div class="col-md-4 md-margin-b-4">
                                     <div class="service" data-height="height">
                                         <div class="service-element">
-                                            <i class="service-icon icon-chemistry"></i>
+                                            <i class="service-icon icon-badge"></i>
                                         </div>
                                         <div class="service-info">
-                                            <h3>Decorator</h3>
-                                            <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                            <h3>Avatar View</h3>
+                                            <p class="margin-b-5" tkey="avatar-view">AvatarView é um simples componente usado para visualizar uma imagem como um avatar personalizado.</p>
                                         </div>
                                         <a href="#" class="content-wrapper-link"></a>
                                     </div>
@@ -155,8 +155,8 @@
                                             <i class="service-icon color-white icon-chemistry"></i>
                                         </div>
                                         <div class="service-info">
-                                            <h3 class="color-white">Drawer</h3>
-                                            <p class="color-white margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                            <h3 class="color-white">Dashboard</h3>
+                                            <p tkey="dashboard" class="color-white margin-b-5">Dashboard é um conjunto de outras bibliotecas, templates e controles personalizados incluidos em um só projeto.</p>
                                         </div>
                                         <a href="#" class="content-wrapper-link"></a>
                                     </div>
@@ -168,7 +168,7 @@
                                         </div>
                                         <div class="service-info">
                                             <h3>Carousel</h3>
-                                            <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                            <p class="margin-b-5" tkey="carousel">O carrossel é uma apresentação de slides para percorrer uma série de nós.</p>
                                         </div>
                                         <a href="/blog/carousel.html" class="content-wrapper-link"></a>
                                     </div>
@@ -183,230 +183,6 @@
          </div>
         <!-- End Experience -->
 
-        <!-- Work -->
-         <div id="work">
-            <div class="container content-lg">
-                <div class="row">
-                    <div class="col-sm-3 sm-margin-b-30">
-                        <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Works</h2>
-                            <p>I build the real value.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-1">
-                        <!-- Masonry Grid -->
-                            <div class="masonry-grid row row-space-2">
-                            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
-                                <!-- Work -->
-                               <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-20">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                             <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <div class="iframe-container">
-                                                          <iframe  align="middle" width="430" height="300" src="https://www.youtube.com/embed/hZsYU7UbWmU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                                        </div>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                              <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                        </div>
-                        <!-- End Masonry Grid -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End Work -->
-
-
 
         <!-- About -->
         <div id="about">
@@ -416,14 +192,23 @@
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
                             <h2 class="margin-b-0">Intro</h2>
-                            <p>What I am all about.</p>
+                            <p tkey="about-me">Sobre mim.</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
                         <div class="margin-b-60">
-                            <p>I'm Gleidson, a Brazilian guy and a system developer and passionate about java and other full-stack languages,
-                              I spend my time developing and studying new technologies and increasing my experience with open source projects in the git hub.</p>
-                              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p tkey="ap-intro">
+                                Eu sou Gleidson, um desenvolvedor de sistemas, apaixonado por tecnologia e programação em java e outras linguages full-stack,
+                                eu estou passando um bom tempo estudando novas tecnologias e aumentando minha experiência em trabalhos em equipe
+                                e projetos de código aberto no git hub.
+                            </p>
+                            <p tkey="ap-focus">
+                              Eu estou focado em aprender e construir componenentes em JavaFx baseado em web design e
+conhecimentos em desenvolvimento web, se quiser se divertir comigo, <a tkey="ap-here" target="_blank" href="https://github.com/Gleidson28">aqui</a> está um link para meu perfil no github.
+                            </p>
+                            <p tkey="ap-contact">
+                              Algum projeto em especifíco, ajuda ou dúvida no final de pagina.
+                            </p>
                         </div>
 
                         <!-- Progress Box -->
@@ -476,23 +261,24 @@
                     <div class="row">
                         <div class="col-sm-3 sm-margin-b-30">
                             <div class="text-right sm-text-left">
-                                <h2 tkey="contact" class="margin-b-0">Contacts</h2>
-                                <p  tkey="hire">Hire me.</p>
+                                <h2 tkey="contact" class="margin-b-0">Contato</h2>
+                                <!-- <p  tkey="hire">Contate me.</p> -->
                             </div>
                         </div>
                         <div class="col-sm-8 col-sm-offset-1">
                             <div class="row">
                                 <div class="col-md-4 col-xs-6 md-margin-b-30">
-                                    <h5 tkey="location">Location</h5>
+                                    <h5 tkey="location">Localização</h5>
                                     <a href="#">Goiâs, Aparecida de Goiânia</a>
                                 </div>
                                 <div class="col-md-4 col-xs-6 md-margin-b-30">
-                                    <h5 tkey="phone">Phone</h5>
+                                    <h5 tkey="phone">Telefone</h5>
                                     <a href="#">+55 62 9 9996-7431</a>
                                 </div>
                                 <div class="col-md-4 col-xs-6">
                                     <h5>Email</h5>
                                     <a href="mailto:#">gleidisonmt@gmail.com</a>
+                                    <a href="mailto:#">gleidisonmt@outlook.com</a>
                                 </div>
                             </div>
                         </div>

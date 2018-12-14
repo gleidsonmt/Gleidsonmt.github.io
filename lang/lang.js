@@ -13,6 +13,7 @@ var translate = function (jsdata)
 }
 
 langCode = navigator.language.substr (0, 2);
+// alert(langCode);
 // langCode = 'en';
 
 if (langCode in langs)

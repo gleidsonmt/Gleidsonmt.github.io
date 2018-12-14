@@ -1,0 +1,21 @@
+{
+    "about"       : "About",
+    "lab"         : "Lab",
+    "projects"    : "Projects",
+    "contact"     : "Contact",
+    "hire"        : "Contact me",
+    "location"    : "Location",
+    "phone"       : "Phone",
+    "developer"   : "Back &amp; Front-end Developer",
+    "lab"         : "Lab",
+    "about-me"    : "What I am all about.",
+    "carousel"    : "The carousel is a slideshow for cycling through a series of nodes.",
+    "avatar-view" : "AvatarView is a simple component used to view one image with a custom avatar.",
+    "dashboard"   : "The dashboard is a set of other libraries, templates and custom controls include in one project.",
+    "ap-intro"    : "I'm Gleidson, one system developer of systems, passionate for technologies and write code in java and other full-stack languages, I have to spend a lot of time studying new technologies and my experience in teamwork and open source projects in the git hub.",
+    "ap-focus"    : "I am focused to learn and build components in JavaFX based on web design and knowledge about the web if you want fun with me, <a target='_blank' href='https://github.com/Gleidson28'>here</a> is a link for my profile on GitHub.",
+    "ap-contact"  : "For some project in specific, help or doubt at final of the page.",
+    "ap-here"     : "here",
+    "phone"       : "Telefone",
+    "location"    : "Location"
+}
