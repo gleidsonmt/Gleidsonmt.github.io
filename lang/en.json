@@ -17,5 +17,6 @@
     "ap-contact"  : "For some project in specific, help or doubt at final of the page.",
     "ap-here"     : "here",
     "phone"       : "Telefone",
-    "location"    : "Location"
+    "location"    : "Location",
+    "gn-button"   : "This component is a animated button with layers."
 }

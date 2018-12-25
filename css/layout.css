@@ -328,6 +328,14 @@ fieldset[disabled] .btn-theme {
   .header .nav-item-child {
     padding: 0px;
   }
+
+  .promo-block-title,
+  .promo-block .promo-block-sub,
+  .promo-block .promo-block-text,
+  .social-icons
+  {
+    color: white !important;
+  }
 }
 
 @media (max-width : 768px) {
@@ -346,13 +354,39 @@ fieldset[disabled] .btn-theme {
 }
 
 @media (max-width : 1200px) {
-  .header .nav-item-child {
-      font-size: 12px !important;
-      font-weight: 400 !important;
-      /* line-height: 70px !important; */
-      padding: 12px !important;
 
-    }
+  .promo-block {
+        background-image: url("../img/fore1.jpg");
+  }
+
+  .img-outside {
+    opacity: 0.0;
+  }
+
+  .promo-block-title,
+  .promo-block .promo-block-sub,
+  .promo-block .promo-block-text,
+  .social-icons
+  {
+    color: white !important;
+  }
+
+  .header .navbar-nav .nav-item .nav-item-child {
+    color: white;
+  }
+
+  .header .nav-item.active .nav-item-hover::after {
+    background: white;
+  }
+
+  .header .nav-item .nav-item-hover::after {
+    background: white;
+  }
+
+  .social-icons:hover {
+    color: #2ad3b2 !important;
+    background: #fff;
+  }
 }
 
 @media (max-width : 768px) {
@@ -828,6 +862,18 @@ fieldset[disabled] .btn-theme {
     position: absolute;
     top: 19px;
   }
+
+  .header .navbar-nav .nav-item .nav-item-child {
+    color: #2ad3b2;
+  }
+
+  .header .nav-item.active .nav-item-hover::after {
+    background: #2ad3b2;
+  }
+
+  .header .nav-item .nav-item-hover::after {
+    background: #2ad3b2;
+  }
 }
 
 /* Media Queries below 767px */
@@ -1133,6 +1179,14 @@ fieldset[disabled] .btn-theme {
   .container-sm {
     width: 970px;
   }
+
+  /* .img-outside {
+    position: absolute;
+    top: 0px !important;
+    right: 0px !important;
+    width: 40% !important;
+    height: 40% !important;
+  } */
 
 }
 
@@ -1556,8 +1610,8 @@ fieldset[disabled] .btn-theme {
 
 .img-outside {
   position : absolute;
-  top : 0px;
-  right: 0px;
-  width: 55%;
-  /* height: 700px; */
+  top : 0%;
+  right: 0%;
+  /* width: 55%; */
+  height: 700px;
 }
