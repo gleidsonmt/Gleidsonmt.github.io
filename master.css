@@ -94,7 +94,7 @@ nav ul li a:hover {
     color: #00BCD4; /* cyan */
 }
 
-main .separator {
+.separator {
     border-color: #E6E9ED;
     height: 100%;
     width: 0.01rem;
@@ -147,6 +147,10 @@ main {
 
 .blue, .red {
     opacity: 0.2;
+}
+
+main .fore {
+    position: absolute;
 }
 
 main .fore .red {
@@ -250,4 +254,63 @@ h5 {
     main {
         display: block;
     }
+}
+
+.social-icons:hover {
+    background-color: #00BCD4;
+    color: white;
+    border-color: #00BCD4;
+    font-weight: bold;
+}
+
+a:hover {
+    border-radius: 100%;
+}
+
+.separator-dot {
+    width: 100%;
+    height: 20px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 63px;
+    margin-top: 10px;
+}
+
+.separator-dot .dot {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: #81848f solid 1px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.separator-right, .separator-left {
+    border-color: #E6E9ED;
+    width: 45%;
+    height: 2px;
+    border-style: dashed;
+}
+
+.separator-right {
+    align-self: flex-start;
+}
+.separator-left {
+    align-self: flex-end;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
 }
