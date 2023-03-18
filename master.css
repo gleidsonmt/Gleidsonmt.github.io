@@ -24,9 +24,7 @@ header {
     width: 100%;
     top: 0;
     background-color: white;
-
     border-bottom: 1.5px solid #E6E9ED;
-
 }
 
 main {
@@ -171,7 +169,7 @@ main .fore .blue {
 }
 
 
-.hire-button {
+.hire-button, .hire-button:hover {
     border-color: transparent;
     background-color: #E6E9ED;
     border-radius: 15px;
