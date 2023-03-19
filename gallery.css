@@ -42,14 +42,13 @@
 	font-size: 25px;
 	line-height: 1;
   }
-  header p {
-	padding-top: 30px;
-  }
+
   
   .gallery {
-	padding: 40px 0 300px;
+	padding: 40px 0 50px;
 	position: relative;
 	overflow: hidden;
+	z-index: -1;
   }
   .gallery ul {
 	padding-top: 50px;
