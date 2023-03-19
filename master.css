@@ -25,6 +25,7 @@ header {
     top: 0;
     background-color: white;
     border-bottom: 1.5px solid #E6E9ED;
+    z-index: 999;
 }
 
 main {
@@ -77,6 +78,7 @@ main .right-main {
 
 nav {
     width: 100%;
+    padding-right: 50px;
 }
 
 nav ul {
