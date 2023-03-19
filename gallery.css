@@ -33,7 +33,6 @@
 	font-weight: 400;
 	letter-spacing: 3px;
 	line-height: 0.8;
-	padding-top: 50px;
 	font-family: "Montserrat", sans-serif;
   }
   header h1 span {
@@ -45,7 +44,7 @@
 
   
   .gallery {
-	padding: 40px 0 50px;
+	padding: 40px 0 40px;
 	position: relative;
 	overflow: hidden;
   }
