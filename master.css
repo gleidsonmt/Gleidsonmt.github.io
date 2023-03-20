@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
     text-align: center;
     justify-content: center;
 }
@@ -42,8 +41,6 @@ main {
     gap: 40px;
 }
 
-
-
 .logo {
     display: flex;
     justify-content: flex-start;
@@ -61,6 +58,10 @@ main {
     height: 24px;
     background-size: cover;
     object-fit: cover;
+}
+
+nav {
+    margin-right: 120px;
 }
 
 nav ul {
@@ -127,7 +128,7 @@ nav ul li a:hover {
 }
 
 main {
-    height: calc(100vh - 68px);
+    height: calc(100vh - 38px);
   
 }
 
@@ -273,7 +274,7 @@ footer .middle > a {
     width: 100%;
     height: 500px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 0.9fr 0.01fr 0.9fr;
     place-items: center;
     padding:  22px auto;
 }
@@ -299,7 +300,18 @@ h5 {
     main {
         display: block;
         height: 100%;
-        right: 50px;;
+        right: 50px;
+        margin-top: 200px;
+    }
+
+    
+    nav {
+       margin-right: 0px;;
+    }
+
+    nav .info-links {
+        margin: 0;
+        margin-bottom: 16px;
     }
 
     header {
@@ -307,6 +319,7 @@ h5 {
         background-color: #00BCD4;
         height: 120px;
         border-radius: 0% 0% 20% 20%;
+        flex-direction: column;
     }
 
     nav ul {
@@ -372,7 +385,6 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding-left: 63px;
     margin-top: 10px;
 }
 
@@ -389,6 +401,8 @@ a:hover {
     border-color: #E6E9ED;
     height: 2px;
     border-style: dashed;
+    width: 45%;
+
 }
 
 .separator-right {
@@ -410,14 +424,13 @@ a:hover {
     border-radius: 50%;
 }
 
-
-
 #certificates #certificates-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end;
     height: 100%;
+    gap: 40px;
 }
 
 #certificates-body {
@@ -444,13 +457,13 @@ a:hover {
 }
 
 
- .cred-btn, .cred-btn:hover {
+ .certificate-item .cred-btn, .certificate-item .cred-btn:hover {
     border-radius: 2%;
     display: block;
     border: 1px solid #656D78;
     padding: 10px;
     text-decoration: none;
-    color: #629ef1;
+    color: #656D78;
 
 }
 nav ul li a {
