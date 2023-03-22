@@ -426,36 +426,49 @@ a:hover {
 
 #certificates #certificates-body {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 100%;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 #certificates-body {
     padding: 100px;
 }
 
+
+
 .certificate-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: flex-start;
     min-width: 350px;
+    align-items: flex-start;
+    gap : 20px;
+    max-width: 350px;
 }
 
 .certificate-item .logo-course img {
     object-fit: cover;
+    width:  40px;;
+}
+
+.certificate-item .certificate-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .c-title, .c-info, .c-date {
     margin: 1%;
+    text-align: left;
 }
 
 .c-date  {
     font-size: 10pt;
 }
-
 
  .certificate-item .cred-btn, .certificate-item .cred-btn:hover {
     border-radius: 2%;
@@ -464,7 +477,8 @@ a:hover {
     padding: 10px;
     text-decoration: none;
     color: #656D78;
-
+    max-width: 200px;
+    min-width: 200px;
 }
 nav ul li a {
     display: block;
@@ -506,4 +520,37 @@ nav ul li a::after {
         height: 4px;
     }
     
+}
+
+
+.c-title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.logo-ghost {
+    width: 40px;
+    height: 40px;
+    background-color: #FFA477;
+}
+
+.logo-ghost .build-2,
+.logo-ghost .build-1 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.logo-ghost .build-1 {
+    background-color: #084D74;
+    top: 0px;
+    left: 15px;
+    height: 30px;
+}
+
+.logo-ghost .build-2 {
+    background-color: #E5311880;
+    left: 6px;
+    top: -10px;
 }
