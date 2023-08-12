@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Quem é o mais beta?",
+        "choice1": "Leozin",
+        "choice2": "Gleidson",
+        "choice3": "Wallison",
+        "choice4": "Daniel",
+        "answer": 1
+    }, 
+    {
+        "question": "Qual o único animal do mundo com quatro joelhos?",
+        "choice1": "Leão",
+        "choice2": "Elefante",
+        "choice3": "Hiena",
+        "choice4": "Você",
+        "answer": 2
+    },
+    {
+        "question": "Qual das opões não é legume ou vegetal?",
+        "choice1": "Cenoura",
+        "choice2": "Alface",
+        "choice3": "Abobora",
+        "choice4": "Couve",
+        "answer": 3
+    }
+]
