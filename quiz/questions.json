@@ -22,5 +22,45 @@
         "choice3": "Abobora",
         "choice4": "Couve",
         "answer": 3
+    },
+    {
+        "question": "Qual o alimento abaixo não apodrece?",
+        "choice1": "Mel",
+        "choice2": "Arroz",
+        "choice3": "Feijão",
+        "choice4": "Mandioca",
+        "answer": 1
+    },
+    {
+        "question": " Qual a velocidade da terra em torno do proprio eixo?",
+        "choice1": "20 km/h",
+        "choice2": "1674 km/h",
+        "choice3": "600 km/h",
+        "choice4": "333 km/h",
+        "answer": 2
+    },
+    {
+        "question": " Qual a velocidade da terra em torno do proprio eixo?",
+        "choice1": "20 km/h",
+        "choice2": "1674 km/h",
+        "choice3": "600 km/h",
+        "choice4": "333 km/h",
+        "answer": 2
+    },
+    {
+        "question": "Um lapis na vertical pode percorrere que distância?",
+        "choice1": "1km",
+        "choice2": "200m",
+        "choice3": "5.000km",
+        "choice4": "56km",
+        "answer": 4
+    }, 
+    {
+        "question": "Em que parte do corpo fica o menor osso humano?",
+        "choice1": "Joelho",
+        "choice2": "Orelha",
+        "choice3": "Pés",
+        "choice4": "Mãos",
+        "answer": 2
     }
 ]
