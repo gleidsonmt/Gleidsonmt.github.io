@@ -48,6 +48,7 @@ startGame = () => {
     questionsCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    console.log(availableQuestions.length);
     getNewQuestion();
 }
 
