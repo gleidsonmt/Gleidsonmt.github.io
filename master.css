@@ -53,7 +53,7 @@ main {
 }
 
 .icon {
-    background-image: url("logo_48.png");
+    background-image: url("logo_128.png");
     width: 24px;
     height: 24px;
     background-size: cover;
@@ -141,7 +141,9 @@ main {
     gap: 40px;
 }
 
-
+.capabilities {
+    max-width: 700px;
+}
 
 main .left-main {
     padding: 10px;
@@ -193,13 +195,14 @@ main .fore .blue {
 .hire-button {
 
     border-color: transparent;
-    background-color: #00BCD4;
+    background-color: #39bbd4;
     border-radius: 15px;
     padding: 10px 15px;
     text-decoration: none;
     cursor: pointer;
     color: white;
     font-weight: bold;
+    border: 2px solid #00BCD4;
 }
 
 .hire-button:hover {
@@ -212,7 +215,7 @@ main .fore .blue {
     color: white;
     font-weight: bold;
     color: #00BCD4;
-    border: 1px solid #00BCD4;
+    border: 2px solid #00BCD4;
 }
 
 .hire-button:active {
@@ -295,8 +298,12 @@ h5 {
     height: 2px;;
 }
 
+nav .info-links li a {
+    color: #00BCD4;
+}
 
-@media (max-width: 800px) {
+
+@media (max-width: 1200px) {
     main {
         display: block;
         height: 100%;
@@ -313,6 +320,8 @@ h5 {
         margin: 0;
         margin-bottom: 16px;
     }
+
+
 
     header {
         flex-wrap: wrap;
@@ -360,6 +369,10 @@ h5 {
     .logo p {
         font-weight: bold;
         font-size: 15pt;
+    }
+
+    nav .info-links li a {
+        color: white;
     }
 }
 
@@ -496,7 +509,7 @@ nav ul li a::after {
 }
 
  nav ul li a:hover::after {
-    background: #2ad3b2;
+    background: #00bcd7;
     content: "";
     width: 100%;
     margin-top: 5px;
@@ -504,6 +517,11 @@ nav ul li a::after {
     height: 4px;
     animation-duration: 500ms;
     animation-name: dotAppear;
+}
+
+.about {
+    padding: 40px;
+    max-width: 800px;
 }
 
 @keyframes dotAppear {
