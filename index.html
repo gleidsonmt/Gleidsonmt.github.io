@@ -26,7 +26,7 @@
 
 <body onload="translate()">
 
-    <header>
+    <header id="nav">
         <div class="logo">
             <span class="icon"></span>
             <p>Gleidson Neves da Silveira</p>
@@ -393,6 +393,18 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="portifolio.js"></script>
     <script src="lang/lang.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+               if($(window).scrollTop() > 100) {
+                $('header').addClass('white');
+               } else {
+                $('header').removeClass('white');
+               }
+            })
+        })
+    </script>
 
 </body>
 

@@ -27,8 +27,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: white;
-    border-bottom: 1.5px solid #E6E9ED;
+    background-color: transparent;
     z-index: 999;
 }
 
@@ -86,7 +85,7 @@ nav ul li a:hover {
 
 .separator {
     border-color: #E6E9ED;
-    height: 100%;
+    height: 80%;
     width: 0.01rem;
     border-style: dashed;
 }
@@ -146,7 +145,7 @@ main {
 }
 
 main .left-main {
-    padding: 10px;
+    padding: 100px;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -162,8 +161,9 @@ main .right-main {
 main .avatar {
     border-radius: 100px;
     display: block;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
+
 }
 
 .blue, .red {
@@ -605,4 +605,9 @@ a {
 
 .icon-view {
     opacity: 0.6;
+}
+
+.white {
+    background: white;
+    opacity: 1;
 }
