@@ -42,7 +42,7 @@
 .arrow-left:hover,
 .arrow-right:hover  
 {
-    opacity: 0.8;
+    opacity: 1;
 
 }
 
@@ -64,7 +64,8 @@ button {
 .arrow-left svg,
 .arrow-right svg
 {
-    fill: rgba(255, 255, 255, 1);
+    /* fill: rgba(255, 255, 255, 1); */
+    fill: black;
 } 
 
 .item {
@@ -84,5 +85,5 @@ button {
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
