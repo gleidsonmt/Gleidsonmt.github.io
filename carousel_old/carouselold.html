@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <div class="container">
+        <button class="arrow-left control"
+        aria-label="Previous image">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/></svg>
+        </button>
+        <button class="arrow-right control"
+        aria-label="Next image">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg>
+        </button>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img class="item current-item" src="./img/badge_duolingo_stats_2022.jpeg">
+                <img class="item" src="./img/man.jpg">
+                <img class="item" src="./img/badge_duolingo_lenda_cosmica_duo_2022.jpg">
+                <!-- <img class="item" src="https://source.unsplash.com/random/250x250/?girl"> -->
+            </div>
+        </div>
+ 
+    </div>
+    <script type="text/javascript" src="carousel.js"></script>
+</body>
+</html>
