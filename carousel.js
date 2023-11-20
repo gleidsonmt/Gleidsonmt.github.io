@@ -10,6 +10,7 @@ control.forEach(control => {
         const isLeft = control.classList
         .contains('arrow-left');
         console.log('control clicked', isLeft);
+
         if(isLeft) {
             currentItem -= 1;
         } else {
@@ -33,5 +34,6 @@ control.forEach(control => {
         });
 
         items[currentItem].classList.add("current-item");
+        
     })
 });
