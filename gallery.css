@@ -1,4 +1,7 @@
-
+.responsive {
+	width: 100%;
+	height: auto;
+  }
   
   .row {
 	width: 100%;
@@ -47,6 +50,7 @@
 	padding: 40px 0 40px;
 	position: relative;
 	overflow: hidden;
+	min-height: 100vh;
   }
   
   .gallery ul {
