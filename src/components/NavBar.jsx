@@ -59,7 +59,7 @@ const NavBar = ({ scrollPos }) => {
     <div>
       <ul
         className={`flex flex-col gap-2
-            font-medium border-2  rounded-lg bg-gray-50   lg:bg-white lg:border-0 laptop:py-0 py-4 laptop:flex-row laptop:gap-10 mx-24 laptop:translate-x-[-66px]`}
+            font-medium border-2  rounded-lg bg-gray-50 info-links  lg:bg-white lg:border-0 laptop:py-0 py-4 laptop:flex-row laptop:gap-10 mx-24 laptop:translate-x-[-66px]`}
       >
         {/* <LinkTop>Work</LinkTop> */}
         <LinkTop link="#footer">
