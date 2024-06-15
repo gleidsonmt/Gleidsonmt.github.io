@@ -82,7 +82,7 @@ const NavBar = ({ scrollPos }) => {
     >
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
         <a href="#" className="flex items-center space-x-3 ">
-          {/* <img className="h-8" src={logo} alt="logo" /> */}
+          <img className="h-8" src={logo} alt="logo" />
           <span className="text-md text-gray-500 whitespace-nowrap">
             Gleidson Neves da Silveira
           </span>
