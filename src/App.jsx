@@ -1,8 +1,11 @@
 function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div
+      className="body bg-red-500 flex flex-row flex-wrap w-full h-screen overflow-y-scroll"
+      // onScroll={handleScroll}
+    >
+      Hello
+    </div>
   );
 }
 
