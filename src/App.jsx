@@ -1,3 +1,5 @@
+import React from "react";
+
 import HeroSection from "./components/HeroSection";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
@@ -20,7 +22,7 @@ import { CertifcateWay } from "./components/CertificateWay";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
 
-function App() {
+export const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = (e) => {
     // const { scrollTop, scrollHeight, clientHeight } = e.target;
@@ -37,7 +39,6 @@ function App() {
       <HeroSection customClass="banner">
         <DoubleSection customClass="hero-section">
           <Section customClass="pt-10 ">
-            {" "}
             <div className="title flex flex-col p-20 gap-10 ">
               <h1 className="font-bold text-gray-500 text-[36px]">
                 HEY! I'm Gleidson, A Front End Developer
@@ -219,6 +220,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
