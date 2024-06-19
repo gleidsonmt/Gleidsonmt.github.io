@@ -26,8 +26,8 @@ const Root13 = () => {
 
   return (
     <main className={styles.main}>
-      <label className="title">Encriptador de Texto</label>
-      <div className="content">
+      <label className={styles.title}>Encriptador de Texto</label>
+      <div className={styles.content}>
         <textarea
           id="left-side"
           onInput={convertRightSide}
