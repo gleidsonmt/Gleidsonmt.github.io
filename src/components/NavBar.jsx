@@ -91,7 +91,7 @@ const NavBar = ({ scrollPos }) => {
         <div className="flex md:order-2 ">
           <button
             className="text-white text-md bg-accent focus:outline-none hover:bg-white hover:text-accent hover:ring-accent hover:ring-2 
-          active:ring-2 active:ring-white active:bg-accent active:text-white rounded-2xl font-bold px-2 py-2 text-center flex flex-wrap gap-1 items-center justify-center "
+          active:ring-2 active:ring-white border-0 active:bg-accent active:text-white rounded-2xl font-bold px-2 py-2 text-center flex flex-wrap gap-1 items-center justify-center "
           >
             Hire Me!
             <HiFire className="text-2xl flex-grow" />

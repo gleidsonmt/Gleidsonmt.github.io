@@ -77,7 +77,7 @@ export const App = () => {
                     social={<SlSocialYoutube />}
                   />
                 </ul>
-                <button className="bg-accent px-4 py-2 rounded-xl text-white max-w-40">
+                <button className="bg-accent px-4 py-2 border-0 rounded-xl text-white max-w-40">
                   Contact Me
                 </button>
               </div>

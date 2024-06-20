@@ -5,6 +5,7 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root13 from "./pages/Root13.jsx";
+import Romanos from "./pages/Romanos.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const routes = createBrowserRouter([
   {
     path: "/root13",
     element: <Root13 />,
+  },
+  {
+    path: "/romanos",
+    element: <Romanos />,
   },
 ]);
 
