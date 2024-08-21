@@ -6,8 +6,8 @@
 
 
 .hero-section  {
-  height: calc(100vh - 52px);
-  min-height: calc(100vh - 52px);
+  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 }
 
 .info-link a {

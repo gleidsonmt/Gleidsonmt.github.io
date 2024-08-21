@@ -3,7 +3,7 @@ import React from "react";
 const DoubleSection = ({ customClass, children }) => {
   return (
     <div
-      className={`flex w-screen h-auto flex-col sm:flex-col md:flex-col xl:flex-row 2xl:flex-row  ${customClass}`}
+      className={`flex w-screen flex-col sm:flex-col md:flex-col xl:flex-row 2xl:flex-row  ${customClass}`}
     >
       {children}
     </div>
