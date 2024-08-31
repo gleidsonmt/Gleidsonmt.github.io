@@ -20,18 +20,18 @@ import {
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-1  w-full place-items-center content-center p-0 m-0 sm:grid-cols-12 mt-20">
+      <div className="grid grid-cols-1  w-full place-items-center m-0 sm:grid-cols-12 mt-10 hero-section">
         <Introduction />
         <Divider
           orientation="vertical"
-          customClass="col-span-1 h-full lg:col-span-2"
+          customClass="col-span-1 lg:col-span-2 h-full"
         />
         <Divider orientation="hori" customClass="col-span-12 lg:hidden " />
         <Wallpaper />
-        <Divider orientation="hori" customClass="col-span-12 " />
       </div>
+      <Divider orientation="hori" customClass="col-span-12 " />
 
-      <div className="grid grid-cols-1 w-full place-items-center content-center p-0 m-0 sm:grid-cols-12 my-20 ">
+      <div className="grid grid-cols-1 w-full place-items-center sm:grid-cols-12 h-screen lg:h-auto">
         <Section customClass="col-span-12 lg:col-span-5 items-center">
           <div className="title flex flex-col p-20 gap-10 ">
             <h1 className="font-bold text-gray-500 text-[36px]">About Me</h1>

@@ -7,7 +7,8 @@ const Wallpaper = () => {
     <div className="w-full col-span-12 lg:col-span-5 p-[22px] ">
       <img
         z-index="0"
-        className="w-full max-h-[500px]  object-contain p-10 max-md:max-h-[800px] xl:max-h-[700px] rounded-full shado-box "
+        // className="w-full max-h-[500px]  object-contain p-10 max-md:max-h-[800px] xl:max-h-[700px] rounded-full shado-box "
+        className="w-full object-contain h-auto max-w-screen-desktop mx-auto max-md:max-h-[900px] xl:max-h-[700px]"
         src={img}
         alt="nerd IA photo"
       />

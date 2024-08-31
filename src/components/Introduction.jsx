@@ -12,8 +12,8 @@ import Divider from "../components/Divider";
 
 const Introduction = () => {
   return (
-    <div className="w-full flex flex-col items-center col-span-12 lg:col-span-5 p-[55px]  ">
-      <h1 className="font-bold text-gray-500 text-[36px] ">
+    <div className="w-full flex flex-col col-span-12 lg:col-span-5 p-[55px] hero h-screen lg:h-auto justify-center">
+      <h1 className="font-bold text-gray-500 text-[36px] p-2">
         HEY! I'm Gleidson, A Front End Developer
       </h1>
       <p className="pt-10 text-gray-500 ">
@@ -25,7 +25,7 @@ const Introduction = () => {
         Let's bring your ideas to life and create software that not only
         performs flawlessly but also leaves a lasting impression on users.
       </p>
-      <div className="flex flex-row flex-wrap gap-12 justify-center items-center ">
+      <div className="flex flex-row flex-wrap gap-12 justify-center items-center p-10">
         <ul className="flex flex-center justify-center xl:gap-6 gap-2">
           <SocialButton
             link="https://www.facebook.com/gleidson.nevesdasilveira"

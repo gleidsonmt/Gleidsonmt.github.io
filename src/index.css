@@ -9,10 +9,11 @@
   }
   
   
-  .hero-section  {
-    height: calc(100vh - 52px);
-    min-height: calc(100vh - 52px);
-  }
+.hero-section  {
+  min-height: calc(100vh - 102px);
+}
+
+
   
   .banner {
     /* min-height: 90%; */

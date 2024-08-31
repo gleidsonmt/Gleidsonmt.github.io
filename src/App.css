@@ -5,10 +5,6 @@
 }
 
 
-.hero-section  {
-  height: calc(100vh - 60px);
-  min-height: calc(100vh - 60px);
-}
 
 .info-link a {
   font-family: Arial, Helvetica, sans-serif;
