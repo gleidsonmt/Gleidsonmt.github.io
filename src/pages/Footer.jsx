@@ -4,7 +4,7 @@ import { MdLocationPin, MdMailOutline } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 w-full flex flex-col justify-around items-center p-10 gap-10 text-gray-500 md:flex-row">
+    <footer className="bg-gray-50 w-full flex flex-col justify-around items-center p-10 gap-10 text-gray-500 md:flex-row footer">
       <h1 className="text-2xl font-bold">Contact</h1>
       <div className=" flex flex-col items-start gap-4 max-w-60 w-full">
         <div className="flex flex-col items-start">
@@ -35,7 +35,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className=" max-w-60 w-full flex-col flex items-start">
+      <div className=" max-w-60 w-full flex-col flex items-start ">
         <h5 className="font-bold">Location</h5>
         <div className="flex flex-col ">
           <h5 className="flex flex-row items-center gap-2">

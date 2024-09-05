@@ -69,6 +69,7 @@ const NavBar = ({ scrollPos }) => {
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume
         </LinkTop>
+        <LinkTop link="/blog">Blog</LinkTop>
         {/* <LinkTop>Book</LinkTop> */}
       </ul>
     </div>
@@ -78,10 +79,10 @@ const NavBar = ({ scrollPos }) => {
     <nav
       className={`nav-bar bg-white ${
         scrollPos > 10 ? "shadow-sm bg-white fixed" : ""
-      }  h-14 fixed top-0 start-0 w-full`}
+      }  h-14 fixed top-0 start-0 w-full `}
     >
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
-        <a href="#" className="flex items-center space-x-3 ">
+        <a href="/" className="flex items-center space-x-3 ">
           <img className="h-8" src={logo} alt="logo" />
           <span className="text-md text-gray-500 whitespace-nowrap">
             Gleidson Neves da Silveira

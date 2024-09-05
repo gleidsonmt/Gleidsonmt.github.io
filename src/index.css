@@ -2,12 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Instagram Sans';
+    src: local('assets/InstagramSans-Regular'), 
+    url('assets/InstagramSans-Regular.woff2') format('woff2'),
+    url('assets/InstagramSans-Regular.woff') format('woff'),
+    url('assets/InstagramSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 #root {
-    margin: 0 auto;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
+  margin: 0 auto;
+  text-align: center;
+  font-family:  'Instagram Sans', Geneva, Tahoma, sans-serif;
+}
+
+.post {
+  font-family: 'Instagram Sans', Geneva, Tahoma, sans-serif;
+}
+
+
   
 .hero-section  {
   min-height: calc(100vh - 102px);

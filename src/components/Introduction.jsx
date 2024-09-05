@@ -11,17 +11,18 @@ import { BsTwitterX } from "react-icons/bs";
 import Divider from "../components/Divider";
 
 const Introduction = () => {
+  // w-full flex flex-col col-span-12 lg:col-span-5 p-[55px] hero h-screen lg:h-auto justify-center
   return (
-    <div className="w-full flex flex-col col-span-12 lg:col-span-5 p-[55px] hero h-screen lg:h-auto justify-center">
-      <h1 className="font-bold text-gray-500 text-[36px] p-2">
+    <div className="col-span-12 lg:h-auto lg: px-20">
+      <h1 className="font-bold text-gray-500 text-[48px] p-2">
         HEY! I'm Gleidson, A Front End Developer
       </h1>
-      <p className="pt-10 text-gray-500 ">
+      <p className="pt-10 text-gray-500 text-[26px] ">
         If you're looking for a software developer who is passionate about Java
         and has a knack for creating visually appealing and user-friendly
         applications, I would be thrilled to collaborate with you.
       </p>
-      <p className="pt-10 text-gray-500 ">
+      <p className="pt-10 text-gray-500 text-[26px] ">
         Let's bring your ideas to life and create software that not only
         performs flawlessly but also leaves a lasting impression on users.
       </p>
