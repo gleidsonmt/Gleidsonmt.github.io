@@ -7,7 +7,7 @@ import img from "../assets/img/man.jpg";
 import ProgrammingBar from "../components/ProgrammingBar";
 import { CertifcateWay } from "../components/CertificateWay";
 import CertificateView from "../components/CertificateView";
-import Introduction from "../components/Introduction";
+import Introduction from "../assets/fonts/Introduction";
 import Wallpaper from "../components/Wallpaper";
 import Divider from "../components/Divider";
 import {

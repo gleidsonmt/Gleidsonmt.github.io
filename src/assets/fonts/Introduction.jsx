@@ -1,6 +1,6 @@
 import React from "react";
 
-import SocialButton from "../components/SocialButton";
+import SocialButton from "../../components/SocialButton";
 import {
   SlSocialFacebook,
   SlSocialGithub,
