@@ -12,6 +12,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Instagram Sans Bold';
+    src: local('assets/Instagram Sans Bold'), 
+    url('assets/Instagram Sans Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Instagram Sans Headline';
+    src: local('assets/Instagram Sans Headline'), 
+    url('assets/Instagram Sans Headline.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instagram-regular {
+  font-family: 'Instagram Sans';
+}
+
+.instagram-bold {
+  font-family: 'Instagram Sans Bold';
+}
+
+.instagram-headline {
+  font-family: 'Instagram Sans Headline';
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -22,10 +50,13 @@
   font-family: 'Instagram Sans', Geneva, Tahoma, sans-serif;
 }
 
+.instagram-font {
+  font-family:  'Instagram Sans', Geneva, Tahoma, sans-serif;
+}
 
   
 .hero-section  {
-  min-height: calc(100vh - 102px);
+  min-height: calc(100vh - 132px);
 }
 
 
