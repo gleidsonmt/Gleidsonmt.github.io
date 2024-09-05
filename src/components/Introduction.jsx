@@ -13,16 +13,16 @@ import Divider from "../components/Divider";
 const Introduction = () => {
   // w-full flex flex-col col-span-12 lg:col-span-5 p-[55px] hero h-screen lg:h-auto justify-center
   return (
-    <div className="col-span-12 lg:h-auto lg: px-20">
-      <h1 className="font-bold text-gray-500 text-[48px] p-2">
+    <div className="col-span-12 mx-20 flex flex-col items-center justify-center sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-5 h-screen xl:h-auto order-2">
+      <h1 className="instagram-bold font-bold text-gray-500 text-[48px] p-2 ">
         HEY! I'm Gleidson, A Front End Developer
       </h1>
-      <p className="pt-10 text-gray-500 text-[26px] ">
-        If you're looking for a software developer who is passionate about Java
+      <p className="pt-10 text-gray-500 text-[22px] ">
+        If you're looking for a software developer who is passionate about UI
         and has a knack for creating visually appealing and user-friendly
         applications, I would be thrilled to collaborate with you.
       </p>
-      <p className="pt-10 text-gray-500 text-[26px] ">
+      <p className="pt-10 text-gray-500 text-[22px] ">
         Let's bring your ideas to life and create software that not only
         performs flawlessly but also leaves a lasting impression on users.
       </p>
