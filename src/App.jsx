@@ -15,7 +15,10 @@ export const App = () => {
   };
 
   return (
-    <div className="body w-full  overflow-y-scroll " onScroll={handleScroll}>
+    <div
+      className="body w-full h-screen overflow-y-scroll"
+      onScroll={handleScroll}
+    >
       <NavBar scrollPos={scrollPosition} />
 
       <Outlet />
