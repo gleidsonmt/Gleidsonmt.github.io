@@ -14,16 +14,16 @@
 
 @font-face {
   font-family: 'Instagram Sans Bold';
-    src: local('assets/Instagram Sans Bold'), 
-    url('assets/Instagram Sans Bold.ttf') format('truetype');
+    src: local('assets/fonts/Instagram Sans Bold'), 
+    url('assets/fonts/Instagram Sans Bold.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Instagram Sans Headline';
-    src: local('assets/Instagram Sans Headline'), 
-    url('assets/Instagram Sans Headline.otf') format('opentype');
+    src: local('assets/fonts/Instagram Sans Headline'), 
+    url('assets/fonts/Instagram Sans Headline.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }

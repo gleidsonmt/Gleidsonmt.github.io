@@ -8,13 +8,12 @@ import {
   SlSocialYoutube,
 } from "react-icons/sl";
 import { BsTwitterX } from "react-icons/bs";
-import Divider from "../components/Divider";
 
 const Introduction = () => {
   // w-full flex flex-col col-span-12 lg:col-span-5 p-[55px] hero h-screen lg:h-auto justify-center
   return (
     <div className="col-span-12 mx-20 flex flex-col items-center justify-center sm:col-span-12 md:col-span-12  lg:col-span-12 xl:col-span-5 h-screen xl:h-auto order-2">
-      <h1 className="instagram-bold font-bold text-gray-500 text-[48px] p-2 ">
+      <h1 className="instagram-bold font-bold text-gray-500 text-[48px] p-2">
         HEY! I'm Gleidson, A Front End Developer
       </h1>
       <p className="pt-10 text-gray-500 text-[22px] ">
