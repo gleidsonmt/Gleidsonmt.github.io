@@ -4,10 +4,10 @@
 
 @font-face {
   font-family: 'Instagram Sans';
-    src: local('assets/InstagramSans-Regular'), 
-    url('assets/InstagramSans-Regular.woff2') format('woff2'),
-    url('assets/InstagramSans-Regular.woff') format('woff'),
-    url('assets/InstagramSans-Regular.ttf') format('truetype');
+    src: local('assets/fonts/InstagramSans-Regular'), 
+    url('assets/fonts/InstagramSans-Regular.woff2') format('woff2'),
+    url('assets/fonts/InstagramSans-Regular.woff') format('woff'),
+    url('assets/fonts/InstagramSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
