@@ -77,9 +77,9 @@ const NavBar = ({ scrollPos }) => {
 
   return (
     <nav
-      className={`nav-bar bg-white ${
-        scrollPos > 10 ? "shadow-sm bg-white fixed" : ""
-      }  h-14 fixed top-0 start-0 w-full `}
+      className={`nav-bar ${
+        scrollPos > 10 ? "fixed shadow-sm bg-white" : ""
+      }  h-50 sm:h-22 fixed top-0 start-0 w-full   `}
     >
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
         <a href="/" className="flex items-center space-x-3 ">
