@@ -79,12 +79,12 @@ const NavBar = ({ scrollPos }) => {
     <nav
       className={`nav-bar ${
         scrollPos > 10 ? "fixed shadow-sm bg-white" : ""
-      }  h-50 sm:h-22 fixed top-0 start-0 w-full   `}
+      }  h-50 sm:h-22 fixed top-0 start-0 w-ful z-20 w-full`}
     >
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
         <a href="/" className="flex items-center space-x-3 ">
           <img className="h-8" src={logo} alt="logo" />
-          <span className="text-md text-gray-500 whitespace-nowrap instagram-headline">
+          <span className="text-xl text-gray-500 whitespace-nowrap instagram-headline">
             Gleidson Neves da Silveira
           </span>
         </a>

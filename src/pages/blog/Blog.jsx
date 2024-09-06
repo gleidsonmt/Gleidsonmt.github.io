@@ -15,12 +15,22 @@ const Blog = () => {
   };
 
   return (
-    <div className="body w-full overflow-y-scroll " onScroll={handleScroll}>
+    // <div
+    //   className="body w-full h-screen overflow-y-scroll "
+    //   onScroll={handleScroll}
+    // >
+    //   <div className="flex flex-col justify-center max-w-screen-2xl mx-auto">
+    //     <Search />
+    //     <NavBar scrollPos={scrollPosition} />
+    //     <IntroPost data={Data[1]} />
+    //     <Blogs posts={Data} />
+    //     <Footer></Footer>
+    //   </div>
+    // </div>
+    <div>
       <Search />
-      <NavBar scrollPos={scrollPosition} />
-      <IntroPost data={Data[0]} />
+      <IntroPost data={Data[1]} />
       <Blogs posts={Data} />
-      <Footer></Footer>
     </div>
   );
 };

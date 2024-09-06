@@ -8,6 +8,7 @@ import Root13 from "./pages/challenges/Root13.jsx";
 import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
 import Blog from "./pages/blog/Blog.jsx";
+import BlogDetails from "./pages/blog/BlogDetails.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -26,11 +27,16 @@ const routes = createBrowserRouter([
         path: "/root13",
         element: <Root13 />,
       },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
     ],
   },
+
   {
-    path: "/blog",
-    element: <Blog />,
+    path: "/blog-detail",
+    element: <BlogDetails />,
   },
 ]);
 

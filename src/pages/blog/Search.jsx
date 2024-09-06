@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import img from "./../../assets/img/headphones-paint-color.jpg";
 // import img from "./../../assets/img/mountain-sunset-river-scenery.jpg";
 import { IoSearchOutline } from "react-icons/io5";
-// import img from "./../../assets/img/man2.jpg";
+// import img from "./../../assets/img/man.jpg";
 const Search = () => {
   const tags = [
     {
       id: 1,
       name: "All",
     },
-
     {
       id: 2,
       name: "React",
     },
-
-    {
-      id: 3,
-      name: "React Native",
-    },
-
     {
       id: 4,
       name: "JavaFx",
@@ -33,15 +26,16 @@ const Search = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="flex justify-center mt-20 flex-col gap-10 px-[20px] sm:px-[50px] lg:px-[100px] items-center">
+    <div className="flex justify-center mt-24 flex-col gap-10 px-[20px] sm:px-[50px] lg:px-[100px] items-center z-10">
       <div className="flex flex-col justify-center ">
         <img
           src={img}
           alt=""
           // opacity-65
-          className="rounded-3xl opacity-65 responsive-img md:max-w-full"
+          className="rounded-3xl opacity-65 object-cover xl:max-h-[600px]"
         />
-        <div className="bg-white shadow-lg p-4 rounded-lg mt-[-40px] mx-[10%] flex items-center z-0">
+
+        <div className="bg-white shadow-lg p-4 rounded-lg mt-[-40px] mx-[10%] flex items-center z-10">
           <IoSearchOutline className="text-[20px] text-gray-400" />
           <input
             type="text"
@@ -51,7 +45,7 @@ const Search = () => {
         </div>
       </div>
 
-      <div className="flex gap-10 justify-center mt-5">
+      <div className="flex gap-10 justify-center mt-5 text-gray-500 instagram-bold">
         {tags.map((el, index) => (
           <ul
             key={index}

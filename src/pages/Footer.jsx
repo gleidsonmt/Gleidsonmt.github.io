@@ -11,7 +11,8 @@ const Footer = () => {
           <h5 className="font-bold">Phone</h5>
           <a
             href="https://contate.me/gleidsonmt"
-            className="flex flex-row items-center gap-2"
+            className="flex flex-row items-center gap-2
+            hover:scale-110 transition-all duration-100 ease-in-out"
           >
             <FaWhatsapp />
             Whatsapp
@@ -21,14 +22,14 @@ const Footer = () => {
           <h5 className="font-bold">Email</h5>
           <a
             href="mailto:gleidsonmt@outlook.com"
-            className="flex flex-row items-center gap-2"
+            className="flex flex-row items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out"
           >
             <MdMailOutline />
             gleidsonmt@outlook.com
           </a>
           <a
             href="mailto:gleidisonmt@gmail.com"
-            className="flex flex-row items-center gap-2"
+            className="flex flex-row items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out"
           >
             <MdMailOutline />
             gleidisonmt@gmail.com

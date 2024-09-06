@@ -1,10 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Blogs = ({ posts }) => {
+  const navigate = useNavigate();
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-10 px-10 md:px-15 lg:px-32 place-items-center post">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 md:px-15 lg:px-32 place-items-center  mb-40 justify-center">
       {posts.map((el, index) => (
-        <div className="m-4 cursor-pointer" key={index}>
+        <div
+          className="m-4 cursor-pointer hover:scale-90 transition-all duration-100 ease-in-out"
+          onClick={() => {
+            navigate("/blog-detail");
+          }}
+          key={index}
+        >
           <img
             src={el.img}
             alt=""

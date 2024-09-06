@@ -48,7 +48,7 @@ const Introduction = () => {
             social={<SlSocialYoutube />}
           />
         </ul>
-        <button className="bg-accent px-4 py-2 border-0 rounded-xl text-white max-w-40">
+        <button className="bg-accent px-4 py-2 border-0 rounded-xl text-white max-w-40 hover:scale-110 hover:border-[1px]  transition-all duration-100 ease-in-out">
           Contact Me
         </button>
       </div>
