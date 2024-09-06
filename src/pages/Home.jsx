@@ -36,18 +36,21 @@ const Home = () => {
         />
         <Wallpaper />
       </Section>
-      <Divider orientation="hori" customClass="col-span-12 " />
+      <Divider orientation="hori" customClass="col-span-12 order-3" />
 
       <Section customClass="grid grid-cols-12 place-items-center">
         <About />
-        <Divider orientation="hori" customClass="col-span-12 xl:hidden " />
 
         <Divider
           orientation="vertical"
-          customClass="col-span-12 opacity-0 xl:opacity-100 xl:h-full xl:col-span-2"
+          customClass="col-span-12 opacity-0 xl:opacity-100 xl:h-full xl:col-span-2 lg:order-2"
+        />
+        <Divider
+          orientation="hori"
+          customClass="col-span-12 xl:hidden order-1"
         />
         <Skills />
-        <Divider orientation="hori" customClass="col-span-12 " />
+        <Divider orientation="hori" customClass="col-span-12 order-3" />
       </Section>
 
       {/* <div className="w-full my-20 flex justify-center items-center flex-wrap  ">
