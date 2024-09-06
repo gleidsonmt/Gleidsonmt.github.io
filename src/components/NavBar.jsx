@@ -84,12 +84,12 @@ const NavBar = ({ scrollPos }) => {
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
         <a href="/" className="flex items-center space-x-3 ">
           <img className="h-8" src={logo} alt="logo" />
-          <span className="text-md text-gray-500 whitespace-nowrap">
+          <span className="text-md text-gray-500 whitespace-nowrap instagram-headline">
             Gleidson Neves da Silveira
           </span>
         </a>
 
-        <div className="flex md:order-2 ">
+        <div className="flex md:order-2 gap-4">
           <button
             className="text-white text-md bg-accent focus:outline-none hover:bg-white hover:text-accent hover:ring-accent hover:ring-2 
           active:ring-2 active:ring-white border-0 active:bg-accent active:text-white rounded-2xl font-bold px-2 py-2 text-center flex flex-wrap gap-1 items-center justify-center "
