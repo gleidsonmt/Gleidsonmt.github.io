@@ -7,7 +7,7 @@ import img from "../assets/img/man.jpg";
 import ProgrammingBar from "../components/ProgrammingBar";
 import { CertifcateWay } from "../components/CertificateWay";
 import CertificateView from "../components/CertificateView";
-import Introduction from "../assets/fonts/Introduction";
+import Introduction from "../components/Introduction";
 import Wallpaper from "../components/Wallpaper";
 import Divider from "../components/Divider";
 import {
@@ -16,12 +16,14 @@ import {
   DiJavascript,
   DiJavascript1,
 } from "react-icons/di";
+import About from "../components/About";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
     <>
       {/* mt-20 */}
-      <div className="grid w-full m-0 grid-cols-12 mt-24 hero-section place-items-center sm:justify-center :mt-14">
+      <Section customClass="grid w-full m-0 grid-cols-12 mt-24 hero-section place-items-center sm:justify-center :mt-14">
         <Introduction />
         <Divider
           orientation="vertical"
@@ -33,42 +35,20 @@ const Home = () => {
           customClass="col-span-12 sm:col-span-12 xl:hidden order-1  "
         />
         <Wallpaper />
-      </div>
-      {/* <Divider orientation="hori" customClass="col-span-12 " />  */}
-      {/* 
-      <div className="grid grid-cols-12">
-        <Section customClass="col-span-12 lg:col-span-5 items-center">
-          <div className="title flex flex-col p-20 gap-10 ">
-            <h1 className="font-bold text-gray-500 text-[36px]">About Me</h1>
-            <p className="pt-10 text-gray-500 text-[22px]">
-              I have honed my skills in Java programming, which has become my
-              forte. I thoroughly enjoy working with Java because of its
-              versatility, scalability, and its ability to power a wide range of
-              applications, from enterprise systems to mobile apps and
-              everything in between.
-            </p>
-            <p className="pt-10 text-gray-500 text-[22px]">
-              In addition to my technical expertise, I have a keen eye for
-              design and aesthetics. I believe that a well-designed software
-              application not only functions flawlessly but also delights users
-              with its visual appeal and intuitive interface. I enjoy
-              incorporating my design skills into my development work, ensuring
-              that the end product not only meets the functional requirements
-              but also looks and feels great.
-            </p>
-          </div>
-        </Section>
-        <Divider orientation="hori" customClass="col-span-12 lg:hidden " />
-        <Divider orientation="vertical" customClass="col-span-12 h-full" />
-        <Section customClass=" w-full col-span-12 lg:col-span-5 ">
-          <div className="flex w-full flex-col items-center">
-            <ProgrammingBar language="Java +20" percent={96} />
-            <ProgrammingBar language="Javascript (Ecma +6)" percent={72} />
-            <ProgrammingBar language="React (Latest)" percent={65} />
-          </div>
-        </Section>
+      </Section>
+      <Divider orientation="hori" customClass="col-span-12 " />
+
+      <Section customClass="grid grid-cols-12 place-items-center">
+        <About />
+        <Divider orientation="hori" customClass="col-span-12 xl:hidden " />
+
+        <Divider
+          orientation="vertical"
+          customClass="col-span-12 opacity-0 xl:opacity-100 xl:h-full xl:col-span-2"
+        />
+        <Skills />
         <Divider orientation="hori" customClass="col-span-12 " />
-      </div> */}
+      </Section>
 
       {/* <div className="w-full my-20 flex justify-center items-center flex-wrap  ">
         <h2 className="flex w-full justify-center items-center gap-2 text-gray-500 font-semibold text-4xl flex-col my-10 lg:my-5 lg:gap-0">
