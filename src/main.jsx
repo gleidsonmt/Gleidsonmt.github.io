@@ -10,6 +10,8 @@ import Home from "./pages/Home.jsx";
 import Blog from "./pages/blog/Blog.jsx";
 import BlogDetails from "./pages/blog/BlogDetails.jsx";
 
+import ReactMarkdown from "react-markdown";
+
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -31,12 +33,11 @@ const routes = createBrowserRouter([
         path: "/blog",
         element: <Blog />,
       },
+      {
+        path: "/post/:id",
+        element: <BlogDetails />,
+      },
     ],
-  },
-
-  {
-    path: "/blog-detail",
-    element: <BlogDetails />,
   },
 ]);
 
