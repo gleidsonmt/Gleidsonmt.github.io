@@ -13,6 +13,7 @@ import Post from "./pages/blog/Post.jsx";
 import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
 
 import hljs from "./pages/codeblocks/web/highlight";
+import Test from "./pages/blog/Test.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -24,23 +25,27 @@ const routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/romanos",
-        element: <Romanos />,
-      },
-      {
-        path: "/root13",
-        element: <Root13 />,
-      },
-      {
         path: "/blog",
         element: <Blog />,
       },
       {
-        path: "/post/:id",
+        path: "/blog/post/:id",
         element: <Post />,
+        // path: "/blog/test/",
+        // element: <Test />,
+      },
+      {
+        path: "/romanos",
+        element: <Romanos />,
       },
     ],
   },
+
+  {
+    path: "/root13",
+    element: <Root13 />,
+  },
+
   {
     path: "block",
     element: <CodeBlock />,

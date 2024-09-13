@@ -10,6 +10,7 @@ import remarkGfm from "remark-gfm";
 import "../codeblocks/web/styles/github.min.css";
 
 const Post = () => {
+  console.log("post");
   const { id } = useParams();
 
   const post = Data.filter((el) => el.id == id)[0];
