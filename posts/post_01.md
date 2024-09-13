@@ -14,6 +14,8 @@ A paragraph with _emphasis_ and **strong importance**
 
 ###### Paragraph 06
 
+<!-- ![alt text](/src/assets/img/Screenshot_2.png) -->
+
 ![Texto Alternativo](/src/assets/img/ezgif.gif).
 
 ```css

@@ -12,6 +12,8 @@ import Post from "./pages/blog/Post.jsx";
 
 import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
 
+import hljs from "./pages/codeblocks/web/highlight";
+
 const routes = createBrowserRouter([
   {
     path: "/",

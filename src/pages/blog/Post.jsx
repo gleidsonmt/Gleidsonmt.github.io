@@ -19,7 +19,6 @@ const Post = () => {
     fetch(`../posts/${post.md}.md`)
       .then((res) => res.text())
       .then((text) => setContent(text));
-    // highCode();
   }, []);
 
   // useEffect(() => {
@@ -35,15 +34,15 @@ const Post = () => {
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
-    <div className="flex flex-col items-center justify-start mt-24 px-10 h-full">
-      <div className="h-full flex flex-col">
+    <div className="flex flex-col items-center justify-start mt-24 px-10 h-auto">
+      <div className="h-full flex flex-col gap-10 ">
         <div className="flex flex-col items-start justify-start max-w-5xl gap-2">
           <h3 className="text-[20px] text-start text-accent font-bold instagram-headline">
             #{post.tag}
           </h3>
           <h3 className="font-bold text-gray-600 ">{post.title}</h3>
           <img src={post.img} className="rounded-2xl " alt="" />
-          <h4 className="mt-5 w-auto text-start text-gray-600 ">{post.desc}</h4>
+          {/* <h4 className="mt-5 w-auto text-start text-gray-600 ">{post.desc}</h4> */}
         </div>
 
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">
@@ -75,9 +74,24 @@ const Post = () => {
               //   );
               // },
 
+              h2(props) {
+                console.log("here");
+                const { ...rest } = props;
+                return <h2 className="text-gray-600 text-7xl mt-2" {...rest} />;
+              },
+
+              h3(props) {
+                const { ...rest } = props;
+                return <h2 className="text-gray-600 text-4xl mt-2" {...rest} />;
+              },
+
+              p(props) {
+                const { ...rest } = props;
+                return <p className="text-gray-500 text-3xl mt-2" {...rest} />;
+              },
+
               img(props) {
                 const { node, ...rest } = props;
-                console.log(props);
                 return <img className="max-w-3xl" {...rest} />;
               },
 
@@ -90,14 +104,14 @@ const Post = () => {
 
                 const { ...res } = children.props;
                 return (
-                  <pre className="text-left bg-gray-200 w-full p-4" {...rest}>
+                  <pre className="text-left bg-gray-100 w-full p-4" {...rest}>
                     <code
                       id="block"
                       style={{
                         backgroundColor:
-                          "rgb(229 231 235 / var(--tw-bg-opacity))",
+                          "rgb(243 244 246 / var(--tw-bg-opacity))",
                       }}
-                      className={`text-left bg-gray-300 w-full  ${language}`}
+                      className={`text-left  w-full bg-gray-100 ${language}`}
                       {...res}
                     ></code>
                   </pre>
@@ -135,6 +149,7 @@ const Post = () => {
         */}
         </div>
       </div>
+      {hljs.highlightAll()}
     </div>
   );
 };

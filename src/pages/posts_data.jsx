@@ -7,7 +7,7 @@ const posts = [
     id: 0,
     title: "Circular Loading",
     category: "Component",
-    desc: "A javafx node/page that appear when you need to work outside a javafx thread.",
+    desc: "A JavaFX node/page that appears when you need to work in the background",
     tag: "JavaFx",
     img: img_0,
     md: "post_00",

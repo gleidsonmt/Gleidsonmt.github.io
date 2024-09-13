@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useState } from "react";
 import NavBar from "./components/NavBar";
 
 import { Outlet } from "react-router-dom";
 import Footer from "./pages/Footer";
-
-// import hljs from "../codeblocks/web/highlight";
-import hljs from "./pages/codeblocks/web/highlight";
 
 export const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -17,11 +14,10 @@ export const App = () => {
     setScrollPosition(scrollTop);
   };
 
-  {
-    hljs.highlightAll();
-  }
-
   return (
+    // {
+    //   hljs.highlightAll();
+    // }
     <div
       className="body w-full h-screen overflow-y-scroll"
       onScroll={handleScroll}
