@@ -12,7 +12,6 @@ import Post from "./pages/blog/Post.jsx";
 
 import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
 
-import hljs from "./pages/codeblocks/web/highlight";
 import Test from "./pages/blog/Test.jsx";
 
 const routes = createBrowserRouter([
@@ -53,7 +52,7 @@ const routes = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={routes} />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <RouterProvider router={routes} />
+  // </React.StrictMode>
 );
