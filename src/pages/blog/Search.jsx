@@ -27,8 +27,7 @@ const Search = ({ selectedTag, currentSearch, closeAction }) => {
   const [textSearch, setTextSearch] = useState("");
   const [hidden, setHidden] = useState(false);
 
-  function appearClose(e) {
-    console.log("wow");
+  function appearClose() {
     setHidden(true);
     setTextSearch("");
     currentSearch();
@@ -40,27 +39,25 @@ const Search = ({ selectedTag, currentSearch, closeAction }) => {
   }
 
   return (
-    <div className="flex justify-center mt-24 flex-col gap-10 px-[20px] sm:px-[50px] lg:px-[100px] items-center z-10">
-      <div className="flex flex-col justify-center ">
-        <img
+    <div className="flex justify-center flex-col gap-2 items-center z-10 order-1">
+      <div className="flex flex-col justify-center max-w-4xl w-full">
+        {/* <img
           src={img}
           alt=""
           // opacity-65
-          className="rounded-3xl opacity-65 object-cover xl:max-h-[600px]"
-        />
+          className="rounded-xl opacity-65 xl:max-w-[1000px] max-h-[400px] object-cover"
+        /> */}
 
-        <div className="bg-white shadow-lg p-4 rounded-lg mt-[-40px] mx-[10%] flex items-center z-10 h-16">
-          <IoSearchOutline className="text-[20px] text-gray-400" />
+        <div className=" bg-white shadow-xl p-4 rounded-lg mt-[-40px] items-center z-10 h-16 border-gray-700 flex mx-20 gap-2">
+          <IoSearchOutline className="text-[20px] text-gray-400 " />
           <input
             type="text"
             placeholder="Search"
             id="search"
-            className="outline-none text-start ml-2 w-full"
+            className="outline-none text-start w-full  "
             onChange={currentSearch}
-            // onInput={appearClose}
             value={textSearch}
             onInput={handleChange}
-            // onChange={appearClose}
           />
           <button
             type="button"
@@ -92,7 +89,8 @@ const Search = ({ selectedTag, currentSearch, closeAction }) => {
         </div>
       </div>
 
-      <div className="flex gap-10 justify-center mt-5 text-gray-500 instagram-bold">
+      <div className="flex flex-col justify-center gap-2 w-full  text-gray-500 instagram-bold m-2 px-2 md:w-auto md:flex-wrap md:flex-row">
+        {/* <div className="flex flex-wrap justify-center"> */}
         {tags.map((el, index) => (
           <ul
             key={index}
@@ -101,8 +99,8 @@ const Search = ({ selectedTag, currentSearch, closeAction }) => {
               selectedTag(el.name);
             }}
             className={`${
-              index == activeIndex ? `bg-accent shadow-xl text-white` : null
-            } p-3 pb-2 rounded-full cursor-pointer md:px-4 hover:scale-110 hover:border-[1px] border-accent transition-all duration-100 ease-in-out`}
+              index == activeIndex ? `bg-accent shadow-sm text-white` : null
+            } p-3 pb-2 rounded-full cursor-pointer md:px-4 hover:scale-110 hover:border-[1px]  transition-all duration-100 ease-in-out`}
           >
             <li>{el.name}</li>
           </ul>

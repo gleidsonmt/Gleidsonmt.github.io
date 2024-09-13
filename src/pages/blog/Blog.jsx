@@ -11,6 +11,7 @@ const Blog = () => {
   const [orgPost, setOrgPost] = useState(Data);
   const [currentTag, setCurrentTag] = useState("All");
   const [currentSearch, setCurrentSearch] = useState("");
+  const [order, setOrder] = useState(0);
 
   function filterPost(tag, name) {
     if (tag.toLowerCase() == "all" && name.toLocaleLowerCase() === "") {
@@ -37,7 +38,10 @@ const Blog = () => {
 
   const filterPostName = (e) => {
     if (e == undefined) {
+      setOrder(0);
       return filterPost(currentTag, "");
+    } else {
+      setOrder(1);
     }
     setCurrentSearch(e.target.value);
 
@@ -50,13 +54,14 @@ const Blog = () => {
   };
 
   return (
-    <div>
+    <div className="mx-auto max-w-7xl flex flex-col">
+      <IntroPost data={Data[0]} ordernation={order} />
+
       <Search
         selectedTag={(tag) => filterPostTag(tag)}
         currentSearch={(search) => filterPostName(search)}
         closeAction={(event) => closeAction(event)}
       />
-      <IntroPost data={Data[1]} />
       <Blogs posts={orgPost} />
     </div>
   );

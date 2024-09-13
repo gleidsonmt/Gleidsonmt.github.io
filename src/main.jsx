@@ -8,9 +8,9 @@ import Root13 from "./pages/challenges/Root13.jsx";
 import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
 import Blog from "./pages/blog/Blog.jsx";
-import BlogDetails from "./pages/blog/BlogDetails.jsx";
+import Post from "./pages/blog/Post.jsx";
 
-import ReactMarkdown from "react-markdown";
+import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -35,9 +35,13 @@ const routes = createBrowserRouter([
       },
       {
         path: "/post/:id",
-        element: <BlogDetails />,
+        element: <Post />,
       },
     ],
+  },
+  {
+    path: "block",
+    element: <CodeBlock />,
   },
 ]);
 

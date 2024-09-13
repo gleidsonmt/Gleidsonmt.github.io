@@ -64,7 +64,7 @@ const NavBar = ({ scrollPos }) => {
         {/* <LinkTop>Work</LinkTop> */}
         <LinkTop link="#footer">
           {/* <p>{lang == "pt-BR" ? "Contato" : "Contact"}</p> */}
-          <p>Contact</p>
+          Contact
         </LinkTop>
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume

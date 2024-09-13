@@ -1,3 +1,5 @@
+# Desvendando os Segredos do Markdown: Guia Prático para Formatação de Texto na Web
+
 A paragraph with _emphasis_ and **strong importance**
 
 # Paragraph 01
@@ -11,3 +13,25 @@ A paragraph with _emphasis_ and **strong importance**
 ##### Paragraph 05
 
 ###### Paragraph 06
+
+![Texto Alternativo](/src/assets/img/ezgif.gif).
+
+```css
+.button {
+  -fx-background-color: blue;
+}
+```
+
+```css
+.button {
+  -fx-background-color: blue;
+}
+```
+
+```java
+  Button btn = new Button("Save");
+```
+
+---
+
+Please let me know if you find typos, grammar or spelling mistakes, or have a suggestion for improving the cheatsheet (since GitHub does not send notifications for gists, it might be better to contact me on twitter, at [@jonschlinkert](https://twitter.com/jonschlinkert)).
