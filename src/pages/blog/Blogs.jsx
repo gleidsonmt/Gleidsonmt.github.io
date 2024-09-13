@@ -29,7 +29,7 @@ const Blogs = ({ posts }) => {
           <h4 className="font-bold text-gray-500 mt-3">{el.title}</h4>
           <h4 className="line-clamp-4 text-gray-600 mt-3">{el.desc}</h4>
           <div className="flex flex-col mt-2">
-            <h5 className="text-gray-600">24 Sept 2024</h5>
+            <h5 className="text-gray-600">13 Sept 2024</h5>
           </div>
         </div>
       ))}

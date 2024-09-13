@@ -7,7 +7,6 @@ import hljs from "../codeblocks/web/highlight";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import styles from "./Post.module.css";
 import "../codeblocks/web/styles/github.min.css";
 
 const Post = () => {

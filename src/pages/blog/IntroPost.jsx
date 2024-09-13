@@ -20,8 +20,8 @@ const IntroPost = ({ data }) => {
           {data.title}
         </h2> */}
         <h4 className="line-clamp-6 text-gray-500 mt-5">
-          Sometimes I like to study explain thing to myself.. that's the way to
-          understand depper.. if it helpe you.. I love it.
+          Sometimes I like to study and explain things to myself.. that's the
+          way to understand deeper.. if it helps you.. I love it.
         </h4>
 
         <a
