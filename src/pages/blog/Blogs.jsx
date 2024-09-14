@@ -14,7 +14,7 @@ const Blogs = ({ posts }) => {
             posts.length > 1 ? "md:col-span-6" : "md:col-span-12"
           } `}
           onClick={() => {
-            navigate("/post/" + el.id);
+            navigate("/blog/post/" + el.id);
           }}
           key={index}
         >
