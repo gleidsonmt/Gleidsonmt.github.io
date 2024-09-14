@@ -17,7 +17,7 @@ const Post = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`../posts/${post.md}.md`)
+    fetch(`./posts/${post.md}.md`)
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
