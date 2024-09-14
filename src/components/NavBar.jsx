@@ -52,10 +52,7 @@ const NavBar = ({ scrollPos }) => {
     setAriaExpanded(!ariaExpanded);
   }
 
-  //   console.log(lang);
-
   const links = (
-    // <button>Ola</button>
     <div>
       <ul
         className={`flex flex-col gap-2
@@ -69,7 +66,7 @@ const NavBar = ({ scrollPos }) => {
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume
         </LinkTop>
-        <LinkTop link="/blog">Blog</LinkTop>
+        <LinkTop link="#blog">Blog</LinkTop>
         {/* <LinkTop>Book</LinkTop> */}
       </ul>
     </div>

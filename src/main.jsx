@@ -59,7 +59,16 @@ const routes = createHashRouter([
   {
     path: "/*",
     element: <App />,
-    children: [{ path: "/*", element: <Home /> }],
+    children: [
+      {
+        path: "/*",
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "blog",
+    element: <Blog />,
   },
 ]);
 
