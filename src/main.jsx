@@ -64,11 +64,15 @@ const routes = createHashRouter([
         path: "/*",
         element: <Home />,
       },
+      {
+        path: "blog",
+        element: <Blog />,
+      },
+      {
+        path: "blog/post/:id",
+        element: <Post />,
+      },
     ],
-  },
-  {
-    path: "blog",
-    element: <Blog />,
   },
 ]);
 
