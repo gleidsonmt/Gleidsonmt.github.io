@@ -50,6 +50,7 @@ const PostMarked = ({ content }) => {
 
         img(props) {
           const { node, ...rest } = props;
+          console.log(rest);
           return <img className="max-w-3xl" {...rest} />;
         },
 
