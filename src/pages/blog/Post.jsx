@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import Data from "../posts_data";
 import { useLocation, useParams } from "react-router-dom";
-import hljs from "../codeblocks/web/highlight";
 
 import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
@@ -21,13 +20,13 @@ const Post = () => {
       // fetch("http://localhost:5173/assets/posts/posts_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
-    highCode();
+    // highCode();
   }, []);
 
   function highCode() {
     console.log("another test");
 
-    hljs.highlightAll();
+    // hljs.highlightAll();
   }
 
   return (
@@ -47,7 +46,6 @@ const Post = () => {
           <PostMarked content={content} />
         </div>
       </div>
-      {hljs.highlightAll()}
     </div>
   );
 };

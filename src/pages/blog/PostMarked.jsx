@@ -2,6 +2,8 @@ import React from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import hljs from "../codeblocks/web/highlight";
+
 const PostMarked = ({ content }) => {
   return (
     <Markdown
@@ -33,7 +35,6 @@ const PostMarked = ({ content }) => {
         // },
 
         h2(props) {
-          console.log("here");
           const { ...rest } = props;
           return <h2 className="text-gray-600 text-7xl mt-2" {...rest} />;
         },
@@ -50,8 +51,15 @@ const PostMarked = ({ content }) => {
 
         img(props) {
           const { node, ...rest } = props;
-          console.log(rest);
-          return <img className="max-w-3xl" {...rest} />;
+          console.log(props.alt);
+          //   return <img className="max-w-3xl" {...rest} />;
+          return (
+            <img
+              src={`./src/${props.src}`}
+              alt={props.alt}
+              className="max-w-3xl"
+            />
+          );
         },
 
         pre(props) {
@@ -96,6 +104,7 @@ const PostMarked = ({ content }) => {
       }}
     >
       {content}
+      {hljs.highlightAll()}
     </Markdown>
   );
 };
