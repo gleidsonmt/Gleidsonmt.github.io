@@ -19,7 +19,9 @@ const Post = () => {
 
   useEffect(() => {
     // fetch(`../assets/posts/${post.md}.md`)
-    fetch("src/assets/posts/post_00.md")
+    fetch(
+      "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/posts/post_00.md"
+    )
       // fetch("http://localhost:5173/assets/posts/posts_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
@@ -52,6 +54,8 @@ const Post = () => {
   // function highCode() {
   //   hljs.highlightAll();
   // }
+
+  console.log(content);
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
