@@ -5,6 +5,7 @@ import { useLocation, useParams } from "react-router-dom";
 
 import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
+import hljs from "../codeblocks/web/highlight";
 
 const Post = () => {
   const { id } = useParams();
@@ -44,6 +45,7 @@ const Post = () => {
 
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">
           <PostMarked content={content} />
+          {hljs.highlightAll()}
         </div>
       </div>
     </div>

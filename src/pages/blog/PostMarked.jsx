@@ -104,7 +104,6 @@ const PostMarked = ({ content }) => {
       }}
     >
       {content}
-      {hljs.highlightAll()}
     </Markdown>
   );
 };
