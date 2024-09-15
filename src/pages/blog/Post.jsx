@@ -17,7 +17,7 @@ const Post = () => {
 
   useEffect(() => {
     // fetch(`../assets/posts/${post.md}.md`)
-    fetch("/src/assets/posts/post_00.md")
+    fetch("#/src/assets/posts/post_00.md")
       // fetch("http://localhost:5173/assets/posts/posts_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
