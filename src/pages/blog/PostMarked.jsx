@@ -55,7 +55,7 @@ const PostMarked = ({ content }) => {
           //   return <img className="max-w-3xl" {...rest} />;
           return (
             <img
-              src={`./src/${props.src}`}
+              src={`./src${props.src}`}
               alt={props.alt}
               className="max-w-3xl"
             />
