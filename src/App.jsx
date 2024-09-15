@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 
 import { Outlet } from "react-router-dom";
 import Footer from "./pages/Footer";
+import hljs from "./pages/codeblocks/web/highlight";
 
 export const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -23,10 +24,9 @@ export const App = () => {
       onScroll={handleScroll}
     >
       <NavBar scrollPos={scrollPosition} />
-
       <Outlet />
-
       <Footer />
+      {hljs.highlightAll()}
     </div>
   );
 };

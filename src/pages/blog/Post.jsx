@@ -13,8 +13,6 @@ const Post = () => {
   const post = Data.filter((el) => el.id == id)[0];
   const [content, setContent] = useState("");
 
-  console.log("another test");
-
   useEffect(() => {
     // fetch(`../assets/posts/${post.md}.md`)
     fetch(
@@ -27,6 +25,8 @@ const Post = () => {
   }, []);
 
   function highCode() {
+    console.log("another test");
+
     hljs.highlightAll();
   }
 
