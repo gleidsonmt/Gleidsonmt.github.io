@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import PostSuspense from "../posts/PostSuspense";
 
 const Blogs = ({ posts }) => {
   const navigate = useNavigate();

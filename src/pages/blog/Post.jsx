@@ -10,17 +10,35 @@ import remarkGfm from "remark-gfm";
 import "../codeblocks/web/styles/github.min.css";
 
 const Post = () => {
-  console.log("post");
   const { id } = useParams();
 
   const post = Data.filter((el) => el.id == id)[0];
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`./posts/${post.md}.md`)
+    // fetch(`../assets/posts/${post.md}.md`)
+    fetch("/src/assets/posts/post_00.md")
+      // fetch("http://localhost:5173/assets/posts/posts_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
+
+  // fetch(`http://localhost:5000/projects/${project.id}`, {
+  //   method: "PATCH",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  //   body: JSON.stringify(project),
+  // })
+  //   .then((resp) => resp.json())
+  //   .then((data) => {
+  //     setProject(data);
+  //     setShowProjectForm(false);
+  //     // mensagem
+  //     setMessage("Projeto Atualizado");
+  //     setType("success");
+  //   })
+  //   .catch((error) => console.log(error));
 
   // useEffect(() => {
   //   window.addEventListener("load", highCode);
@@ -29,9 +47,9 @@ const Post = () => {
   //   };
   // });
 
-  function highCode() {
-    hljs.highlightAll();
-  }
+  // function highCode() {
+  //   hljs.highlightAll();
+  // }
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">

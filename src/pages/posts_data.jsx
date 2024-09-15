@@ -1,6 +1,6 @@
 import img_0 from "../assets/img/ezgif.gif";
-import img1 from "../assets/img/ezgif.gif";
-import img2 from "../assets/img/mountain-sunset-river-scenery.jpg";
+// import img1 from "../assets/img/ezgif.gif";
+// import img2 from "../assets/img/mountain-sunset-river-scenery.jpg";
 
 const posts = [
   {
