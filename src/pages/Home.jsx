@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       {/* mt-20 */}
-      <Section customClass="grid w-full m-0 grid-cols-12 mt-24 hero-section place-items-center sm:justify-center :mt-14">
+      <Section customClass="grid w-full grid-cols-12 hero-section place-items-center sm:justify-center mt-20 gap-y-10">
         <Introduction />
         <Divider
           orientation="vertical"

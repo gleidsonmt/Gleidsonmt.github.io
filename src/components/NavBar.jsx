@@ -55,7 +55,7 @@ const NavBar = ({ scrollPos }) => {
   const links = (
     <div>
       <ul
-        className={`flex flex-col gap-2
+        className={`flex flex-col gap-20
             font-medium border-2  rounded-lg bg-gray-50 info-links  lg:bg-white lg:border-0 laptop:py-0 py-4 laptop:flex-row laptop:gap-10 mx-24 laptop:translate-x-[-66px] instagram-headline`}
       >
         {/* <LinkTop>Work</LinkTop> */}
