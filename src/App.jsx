@@ -26,7 +26,7 @@ export const App = () => {
       <NavBar scrollPos={scrollPosition} />
       <Outlet />
       <Footer />
-      {/* {hljs.highlightAll()} */}
+      {hljs.highlightAll()}
     </div>
   );
 };

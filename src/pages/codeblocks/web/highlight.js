@@ -2303,7 +2303,7 @@
           { el: element, language });
   
         if (element.dataset.highlighted) {
-          console.log("Element previously highlighted. To highlight again, first unset `dataset.highlighted`.", element);
+          // console.log("Element previously highlighted. To highlight again, first unset `dataset.highlighted`.", element); // @comented only for github pages
           return;
         }
   
