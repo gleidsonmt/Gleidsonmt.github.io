@@ -55,7 +55,8 @@ const PostMarked = ({ content }) => {
           //   return <img className="max-w-3xl" {...rest} />;
           return (
             <img
-              src={`./src${props.src}`}
+              // src={`./src${props.src}`}
+              src="https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/img/model.png"
               alt={props.alt}
               className="max-w-3xl"
             />

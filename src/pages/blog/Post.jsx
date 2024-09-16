@@ -45,7 +45,7 @@ const Post = () => {
 
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">
           <PostMarked content={content} />
-          {hljs.highlightAll()}
+          {/* {hljs.highlightAll()} */}
         </div>
       </div>
     </div>
