@@ -4,6 +4,8 @@ import remarkGfm from "remark-gfm";
 
 import hljs from "../codeblocks/web/highlight";
 
+import Global from "../../Global";
+
 const PostMarked = ({ content }) => {
   return (
     <Markdown
@@ -56,7 +58,7 @@ const PostMarked = ({ content }) => {
           return (
             <img
               // src={`./src${props.src}`}
-              src="https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/img/model.png"
+              src={Global.assets + "/img/model.png"}
               alt={props.alt}
               className="max-w-3xl"
             />
