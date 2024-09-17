@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import IntroPost from "./IntroPost";
 import Search from "./Search";
 import Blogs from "./Blogs";
-import NavBar from "../../components/NavBar";
 import Data from "../posts_data";
-import Footer from "../Footer";
-import { SiYoutubetv } from "react-icons/si";
 
 const Blog = () => {
   const [orgPost, setOrgPost] = useState(Data);

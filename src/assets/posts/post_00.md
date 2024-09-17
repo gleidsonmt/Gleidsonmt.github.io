@@ -45,7 +45,7 @@ now you can see things as tree
 
 ### The Model
 
-## ![alt text](/assets/img/model.png)
+## ![alt text](/assets/img/sc5.png)
 
 There's two section.. the container circle section and the legend section
 as long you know there's a layout that lays out its children in a single vertical column (VBox). So let's begin with it.
