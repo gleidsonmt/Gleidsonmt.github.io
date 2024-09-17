@@ -21,13 +21,11 @@ const Post = () => {
       // fetch("http://localhost:5173/assets/posts/posts_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
-    // highCode();
+    highCode();
   }, []);
 
   function highCode() {
-    console.log("another test");
-
-    // hljs.highlightAll();
+    hljs.highlightAll();
   }
 
   return (
@@ -45,7 +43,7 @@ const Post = () => {
 
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">
           <PostMarked content={content} />
-          {/* {hljs.highlightAll()} */}
+          {hljs.highlightAll()}
         </div>
       </div>
     </div>

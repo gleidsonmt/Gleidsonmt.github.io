@@ -99,11 +99,11 @@ const NavBar = ({ scrollPos }) => {
         {/* <p>{lang == "pt-BR" ? "Contato" : "Contact"}</p> */}
         {/* </LinkTop> */}
         {/* <a onChange={goFooter}>Contact</a> */}
-        <LinkTop link="#footer"> Contact </LinkTop>
+        <LinkTop link="/#footer"> Contact </LinkTop>
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume
         </LinkTop>
-        <LinkTop link="#blog">Blog</LinkTop>
+        <LinkTop link="/blog">Blog</LinkTop>
         {/* <LinkTop>Book</LinkTop> */}
       </ul>
     </div>

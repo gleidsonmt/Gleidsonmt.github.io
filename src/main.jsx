@@ -56,6 +56,39 @@ import Footer from "./pages/Footer.jsx";
 //   },
 // ]);
 
+// const routes = createHashRouter([
+//   {
+//     path: "/*",
+//     element: <App />,
+//     children: [
+//       {
+//         path: "/home",
+//         element: <Home />,
+//         children: [
+//           {
+//             path: "/*/footer",
+//             element: <Footer />,
+//           },
+//         ],
+//       },
+//       {
+//         path: "blog",
+//         element: <Blog />,
+//         children: [
+//           {
+//             path: "blog#footer",
+//             element: <Footer />,
+//           },
+//         ],
+//       },
+//       {
+//         path: "blog/post/:id",
+//         element: <Post />,
+//       },
+//     ],
+//   },
+// ]);
+
 const routes = createHashRouter([
   {
     path: "/*",
@@ -64,19 +97,13 @@ const routes = createHashRouter([
       {
         path: "/*",
         element: <Home />,
-        children: [
-          {
-            path: "/*/footer",
-            element: <Footer />,
-          },
-        ],
       },
       {
-        path: "blog",
+        path: "/*/blog",
         element: <Blog />,
       },
       {
-        path: "blog/post/:id",
+        path: "/*/blog/post/:id",
         element: <Post />,
       },
     ],
