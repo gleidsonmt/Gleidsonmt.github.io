@@ -43,10 +43,6 @@ now you can see things as tree
 
 ```
 
-### The Model
-
-## ![alt text](/assets/img/sc5.png)
-
 There's two section.. the container circle section and the legend section
 as long you know there's a layout that lays out its children in a single vertical column (VBox). So let's begin with it.
 
@@ -225,6 +221,10 @@ At this point, we finished the first of three loaders.. the circle loader.
 Let's add some css..
 
 ```css
+.root {
+  -fx-background-color: white;
+}
+
 .suspense-circle > .container-circle > .track-circle {
   -fx-stroke: #3592c4;
 }
@@ -241,3 +241,7 @@ Let's add some css..
   -fx-font-size: 14pt;
 }
 ```
+
+### The Result
+
+## ![alt text](/assets/img/sc5.png)
