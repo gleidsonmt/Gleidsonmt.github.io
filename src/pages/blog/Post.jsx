@@ -18,7 +18,7 @@ const Post = () => {
     // fetch(
     //   "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/posts/post_00.md"
     // )
-    fetch("./src/assets/posts/post_00.md")
+    fetch("/src/assets/posts/post_00.md")
       // fetch("../../assets/posts/post_00.md")
       .then((res) => res.text())
       .then((text) => setContent(text));
