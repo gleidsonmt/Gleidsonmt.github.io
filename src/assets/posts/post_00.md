@@ -1,7 +1,7 @@
 ## Starting
 
-Let's start visualing what we are build.. the most layout panes can fit good here.. we don't need to manage too many children.. and this children is in order to top and down..
-only circles needs to above each other.. and the title and legends can be changed in the component.. let's create an interface for further implementations.
+Let's start visualizing what we are building.. most layout panes can fit well here.. we don't need to manage too many children.. and this child is to top and down.
+Only circles need to be above each other.. and the title and legends can be changed in the component.. let's create an interface for further implementations.
 
 ---
 

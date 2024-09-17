@@ -1,7 +1,7 @@
-const Global = {
+const global = {
   homepage: "gleidsonmt.github.io",
   assets:
-    "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src",
+    "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/",
 };
 
-export default Global;
+export default global;

@@ -5,7 +5,7 @@ import logo from "../assets/img/logo_128.png";
 import { HiFire } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
 
-const NavBar = ({ scrollPos }) => {
+const NavBar = ({ scrollPos, global }) => {
   const [lang, setLang] = useState("");
 
   function translate() {

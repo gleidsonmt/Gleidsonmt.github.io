@@ -7,6 +7,8 @@ import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
 import hljs from "../codeblocks/web/highlight";
 
+import global from "../../Global";
+
 const Post = () => {
   const { id } = useParams();
 
@@ -15,7 +17,8 @@ const Post = () => {
 
   useEffect(() => {
     //fetch("https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/posts/post_00.md") // server
-    fetch("/src/assets/posts/post_00.md") // local
+    fetch(global.assets + "/src/assets/posts/post_00.md")
+      // fetch("/src/assets/posts/post_00.md") // local
       .then((res) => res.text())
       .then((text) => setContent(text));
     highCode();
