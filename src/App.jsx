@@ -22,6 +22,9 @@ export const App = () => {
     if (!window.location.host.replace(/localhost|127\.0\.0\.1/i, "")) {
       return 2;
     }
+    console.log("location", window.location);
+    console.log("protocol", window.location.protocol);
+    console.log("host", window.location.host);
     return 1;
   }
 
