@@ -15,6 +15,17 @@ export const App = () => {
     setScrollPosition(scrollTop);
   };
 
+  function locationType() {
+    if (window.location.protocol == "file:") {
+      return 0;
+    }
+    if (!window.location.host.replace(/localhost|127\.0\.0\.1/i, "")) {
+      return 2;
+    }
+    return 1;
+  }
+
+  console.log(locationType());
   return (
     // {
     //   hljs.highlightAll();

@@ -38,12 +38,23 @@ const PostMarked = ({ content }) => {
 
         h2(props) {
           const { ...rest } = props;
-          return <h2 className="text-gray-600 text-7xl mt-2" {...rest} />;
+          return <h2 className=" text-7xl mt-2 " {...rest} />;
+        },
+
+        hr(props) {
+          const { ...rest } = props;
+          console.log(props);
+          return <hr {...rest} className="border-accent border-2" />;
         },
 
         h3(props) {
           const { ...rest } = props;
-          return <h2 className="text-gray-600 text-4xl mt-2" {...rest} />;
+          return (
+            <h2
+              className="mt-10 text-gray-600 font-bold text-4xl mt-2"
+              {...rest}
+            />
+          );
         },
 
         p(props) {

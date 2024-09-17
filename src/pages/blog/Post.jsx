@@ -14,12 +14,8 @@ const Post = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    // fetch(`../assets/posts/${post.md}.md`)
-    // fetch(
-    //   "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/posts/post_00.md"
-    // )
-    fetch("src/assets/posts/post_00.md")
-      // fetch("../../assets/posts/post_00.md")
+    //fetch("https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/src/assets/posts/post_00.md") // server
+    fetch("/src/assets/posts/post_00.md") // local
       .then((res) => res.text())
       .then((text) => setContent(text));
     highCode();
