@@ -240,4 +240,4 @@ Let's add some css..
 
 ### The Result
 
-## ![alt text](/assets/img/sc5.png)
+## ![alt text](src/assets/img/sc5.png)

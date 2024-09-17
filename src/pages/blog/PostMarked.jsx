@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 
 import hljs from "../codeblocks/web/highlight";
 
-import Global from "../../Global";
+import global from "../../Global";
 
 const PostMarked = ({ content }) => {
   return (
@@ -44,16 +44,15 @@ const PostMarked = ({ content }) => {
         hr(props) {
           const { ...rest } = props;
           console.log(props);
-          return <hr {...rest} className="border-accent border-2" />;
+          return (
+            <hr {...rest} className="border-accent border-2 rounded-full" />
+          );
         },
 
         h3(props) {
           const { ...rest } = props;
           return (
-            <h2
-              className="mt-10 text-gray-600 font-bold text-4xl mt-2"
-              {...rest}
-            />
+            <h2 className=" text-gray-600 font-bold text-4xl mt-2" {...rest} />
           );
         },
 
@@ -68,9 +67,10 @@ const PostMarked = ({ content }) => {
           //   return <img className="max-w-3xl" {...rest} />;
           return (
             <img
-              // src={`./src${props.src}`}
+              // src={global.assets + `./src${props.src}`}
 
-              src={"./src/assets/img/gif_circle.gif"}
+              // src={"./src/assets/img/gif_circle.gif"}
+              src={global.assets + props.src}
               alt={props.alt}
               className="max-w-3xl"
             />
