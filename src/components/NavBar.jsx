@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import LinkTop from "./LinkTop";
 import logo from "../assets/img/logo_128.png";
 import { HiFire } from "react-icons/hi2";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = ({ scrollPos }) => {
   const [lang, setLang] = useState("");
@@ -33,6 +34,41 @@ const NavBar = ({ scrollPos }) => {
     };
   });
 
+  // const location = useLocation();
+  // const lastHash = useRef("footer");
+
+  // useEffect(() => {
+  //   // lastHash = "#footer";
+  //   console.log(location.hash);
+  //   console.log(lastHash);
+  //   if (location.hash.length > 0) {
+  //     lastHash.current = location.hash.slice(1);
+  //   }
+  //   // if (location.hash) {
+  //   //   lastHash.current = location.hash.slice(1); // safe hash for further use after navigation
+  //   // }
+
+  //   console.log(lastHash);
+  //   console.log(document.getElementById(lastHash.current));
+  //   if (lastHash.current && document.getElementById(lastHash.current)) {
+  //     setTimeout(() => {
+  //       document
+  //         .getElementById(lastHash.current)
+  //         ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  //       lastHash.current = "";
+  //     }, 100);
+  //   }
+  // }, [location]);
+
+  function goFooter() {
+    setTimeout(() => {
+      document
+        .getElementById("footer")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      // lastHash.current = "";
+    }, 100);
+  }
+
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
@@ -55,14 +91,15 @@ const NavBar = ({ scrollPos }) => {
   const links = (
     <div>
       <ul
-        className={`flex flex-col gap-20
+        className={`flex flex-col gap-2
             font-medium border-2  rounded-lg bg-gray-50 info-links  lg:bg-white lg:border-0 laptop:py-0 py-4 laptop:flex-row laptop:gap-10 mx-24 laptop:translate-x-[-66px] instagram-headline`}
       >
         {/* <LinkTop>Work</LinkTop> */}
-        <LinkTop link="#footer">
-          {/* <p>{lang == "pt-BR" ? "Contato" : "Contact"}</p> */}
-          Contact
-        </LinkTop>
+        {/* <LinkTop link={lastHash} > */}
+        {/* <p>{lang == "pt-BR" ? "Contato" : "Contact"}</p> */}
+        {/* </LinkTop> */}
+        {/* <a onChange={goFooter}>Contact</a> */}
+        <LinkTop link="#footer"> Contact </LinkTop>
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume
         </LinkTop>
