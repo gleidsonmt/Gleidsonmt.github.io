@@ -10,7 +10,7 @@ const PostMarked = ({ content }) => {
   return (
     <Markdown
       remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
-      className="flex flex-col gap-2 w-full text-left"
+      className="flex flex-col w-full text-left my-20 h-full gap-y-10"
       components={{
         // // Map `h1` (`# heading`) to use `h2`s.
         // h1: "h2",
@@ -38,15 +38,7 @@ const PostMarked = ({ content }) => {
 
         h2(props) {
           const { ...rest } = props;
-          return <h2 className=" text-7xl mt-2 " {...rest} />;
-        },
-
-        hr(props) {
-          const { ...rest } = props;
-          console.log(props);
-          return (
-            <hr {...rest} className="border-accent border-2 rounded-full" />
-          );
+          return <h2 className=" text-7xl text-gray-700 font-bold" {...rest} />;
         },
 
         h3(props) {
@@ -63,7 +55,6 @@ const PostMarked = ({ content }) => {
 
         img(props) {
           const { node, ...rest } = props;
-          console.log(global.assets + props.src);
           //   return <img className="max-w-3xl" {...rest} />;
           return (
             <img
