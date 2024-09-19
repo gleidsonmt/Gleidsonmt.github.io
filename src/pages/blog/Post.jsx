@@ -29,6 +29,8 @@ const Post = () => {
     hljs.highlightAll();
   }
 
+  console.log(global.assets);
+
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
     <div className="flex flex-col items-center justify-start mt-24 px-10 h-auto">
@@ -45,18 +47,20 @@ const Post = () => {
           <PostMarked content={content} />
           {hljs.highlightAll()}
         </div>
-        {/* <DiscussionEmbed
+
+        <DiscussionEmbed
           shortname="https-gleidsonmt-github-io"
           config={{
             // url: this.props.article.url,
-            url: "http://localhost:5173/#/blog/post/0",
+            // url: "http://localhost:5173/#/blog/post/0",
+            url: "https://" + global.assets + "/#/blog/post/",
             // identifier: this.props.article.id,
             identifier: "0",
             // title: this.props.article.title,
             title: "Test",
             language: "en", //e.g. for Traditional Chinese (Taiwan)
           }}
-        /> */}
+        />
         <a
           href=" https://github.com/gleidsonmt"
           className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out "
