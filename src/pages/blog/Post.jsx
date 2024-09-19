@@ -29,9 +29,8 @@ const Post = () => {
     hljs.highlightAll();
   }
 
-  console.log("https://" + global.homepage + "/#/blog/post/");
-  console.log("post" + post.title);
-  console.info("post" + post.title);
+  console.log("post " + post.title);
+  console.info("post " + post.title);
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
@@ -55,9 +54,10 @@ const Post = () => {
           config={{
             // url: this.props.article.url,
             // url: "http://localhost:5173/#/blog/post/0",
-            url: "https://" + global.assets + "/#/blog/post/" + id,
+            // url: "https://" + global.assets + "/#/blog/post/" + id,
+            url: "https://gleidsonmt.github.io",
             // identifier: this.props.article.id,
-            identifier: "0",
+            identifier: post.id.toString(),
             // title: this.props.article.title,
             // title: "Test",
             title: post.title,

@@ -14,7 +14,7 @@ const posts = [
   },
   {
     id: 1,
-    title: "Circular Loading Test",
+    title: "Another Circular",
     category: "Component Test",
     desc: "A JavaFX node/page that appears when you need to work in the background",
     tag: "JavaFx",
