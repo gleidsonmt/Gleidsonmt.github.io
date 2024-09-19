@@ -1,23 +1,14 @@
-import React from "react";
-import HeroSection from "../components/HeroSection";
-import DoubleSection from "../components/DoubleSection";
+import React, { useEffect, useState } from "react";
 import Section from "../components/Section";
 
-import img from "../assets/img/man.jpg";
-import ProgrammingBar from "../components/ProgrammingBar";
-import { CertifcateWay } from "../components/CertificateWay";
-import CertificateView from "../components/CertificateView";
 import Introduction from "../components/Introduction";
 import Wallpaper from "../components/Wallpaper";
 import Divider from "../components/Divider";
-import {
-  DiCss3Full,
-  DiJava,
-  DiJavascript,
-  DiJavascript1,
-} from "react-icons/di";
+
 import About from "../components/About";
 import Skills from "../components/Skills";
+import global from "../Global";
+import Certificates from "./Certificates";
 
 const Home = () => {
   return (
@@ -50,6 +41,8 @@ const Home = () => {
         <Skills />
         <Divider orientation="hori" customClass="col-span-12 order-3" />
       </Section>
+
+      <Certificates />
 
       {/* <div className="w-full my-20 flex justify-center items-center flex-wrap  ">
         <h2 className="flex w-full justify-center items-center gap-2 text-gray-500 font-semibold text-4xl flex-col my-10 lg:my-5 lg:gap-0">

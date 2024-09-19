@@ -16,7 +16,6 @@ import Post from "./pages/blog/Post.jsx";
 
 import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
 
-import Test from "./pages/blog/Test.jsx";
 import Footer from "./pages/Footer.jsx";
 
 // const routes = createBrowserRouter([

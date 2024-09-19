@@ -7,6 +7,7 @@ import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
 import hljs from "../codeblocks/web/highlight";
 import { DiscussionEmbed } from "disqus-react";
+import { GrGithub } from "react-icons/gr";
 
 import global from "../../Global";
 
@@ -56,7 +57,11 @@ const Post = () => {
             language: "en", //e.g. for Traditional Chinese (Taiwan)
           }}
         /> */}
-        <a href="https://gist.github.com/gleidsonmt/ea0c3425bcbdacac7ee1fdda8ee3b33c">
+        <a
+          href=" https://github.com/gleidsonmt"
+          className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out "
+        >
+          <GrGithub className="text-gray-600" />
           GitHub Gist
         </a>
       </div>
