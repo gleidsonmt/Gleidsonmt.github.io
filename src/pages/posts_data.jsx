@@ -12,6 +12,15 @@ const posts = [
     img: img_0,
     md: "post_00",
   },
+  {
+    id: 1,
+    title: "Circular Loading Test",
+    category: "Component Test",
+    desc: "A JavaFX node/page that appears when you need to work in the background",
+    tag: "JavaFx",
+    img: img_0,
+    md: "post_01",
+  },
 ];
 
 export default posts;

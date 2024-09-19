@@ -29,7 +29,7 @@ const Post = () => {
     hljs.highlightAll();
   }
 
-  console.log(global.assets);
+  console.log("https://" + global.homepage + "/#/blog/post/");
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
