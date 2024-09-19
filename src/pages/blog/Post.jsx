@@ -6,7 +6,7 @@ import { useLocation, useParams } from "react-router-dom";
 import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
 import hljs from "../codeblocks/web/highlight";
-import { DiscussionEmbed } from "disqus-react";
+import { CommentEmbed, DiscussionEmbed } from "disqus-react";
 import { GrGithub } from "react-icons/gr";
 
 import global from "../../Global";
@@ -30,6 +30,8 @@ const Post = () => {
   }
 
   console.log("https://" + global.homepage + "/#/blog/post/");
+  console.log("post" + post.title);
+  console.info("post" + post.title);
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">
@@ -49,7 +51,7 @@ const Post = () => {
         </div>
 
         <DiscussionEmbed
-          shortname="https-gleidsonmt-github-io-blog-post-1"
+          shortname="https-gleidsonmt-github-io"
           config={{
             // url: this.props.article.url,
             // url: "http://localhost:5173/#/blog/post/0",
@@ -57,10 +59,12 @@ const Post = () => {
             // identifier: this.props.article.id,
             identifier: "0",
             // title: this.props.article.title,
-            title: "Test",
+            // title: "Test",
+            title: post.title,
             language: "en", //e.g. for Traditional Chinese (Taiwan)
           }}
         />
+
         <a
           href=" https://github.com/gleidsonmt"
           className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out "
