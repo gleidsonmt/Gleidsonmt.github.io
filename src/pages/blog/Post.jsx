@@ -6,6 +6,7 @@ import { useLocation, useParams } from "react-router-dom";
 import "../codeblocks/web/styles/github.min.css";
 import PostMarked from "./PostMarked";
 import hljs from "../codeblocks/web/highlight";
+import { DiscussionEmbed } from "disqus-react";
 
 import global from "../../Global";
 
@@ -39,11 +40,25 @@ const Post = () => {
           <img src={post.img} className="rounded-2xl " alt="" />
           {/* <h4 className="mt-5 w-auto text-start text-gray-600 ">{post.desc}</h4> */}
         </div>
-
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">
           <PostMarked content={content} />
           {hljs.highlightAll()}
         </div>
+        {/* <DiscussionEmbed
+          shortname="https-gleidsonmt-github-io"
+          config={{
+            // url: this.props.article.url,
+            url: "http://localhost:5173/#/blog/post/0",
+            // identifier: this.props.article.id,
+            identifier: "0",
+            // title: this.props.article.title,
+            title: "Test",
+            language: "en", //e.g. for Traditional Chinese (Taiwan)
+          }}
+        /> */}
+        <a href="https://gist.github.com/gleidsonmt/ea0c3425bcbdacac7ee1fdda8ee3b33c">
+          GitHub Gist
+        </a>
       </div>
     </div>
   );

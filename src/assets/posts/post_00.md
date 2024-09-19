@@ -9,9 +9,9 @@ Let's start visualizing what we are building.. most layout panes can fit well he
 ```java
 public interface SuspenseLoader {
 
-    StringProperty titleProperty();
+    StringProperty titleProperty();   // bind this value.. with the tasks.. or services..
 
-    StringProperty legendProperty();
+    StringProperty legendProperty();  // bind this value.. with the tasks.. or services..
 
     void setTitle(String _title);
 
@@ -187,6 +187,8 @@ private StackPane createCircleContainer() {
 }
 ```
 
+---
+
 At this point, we finished the first of three loaders.. the circle loader.
 Let's add some css..
 
@@ -232,6 +234,8 @@ public class App extends Application {
     }
 }
 ```
+
+---
 
 ### The Result
 
@@ -442,3 +446,23 @@ public class App extends Application {
 ```
 
 ![alt text](src/assets/img/final_circles.gif)
+
+### Using tasks
+
+```java
+        ...
+        Task task = new Task() {
+            @Override
+            protected Object call() throws Exception {
+                Thread.sleep(2000);
+                updateTitle("Initializing...");
+                updateMessage(("Welcome!"));
+
+                return null;
+            }
+        };
+        Thread thread = new Thread(task);
+        thread.start();
+        suspenseCircle.titleProperty().bind(task.titleProperty());
+        suspenseCircle.legendProperty().bind(task.messageProperty());
+```
