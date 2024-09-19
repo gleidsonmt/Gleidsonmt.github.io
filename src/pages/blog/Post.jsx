@@ -49,11 +49,11 @@ const Post = () => {
         </div>
 
         <DiscussionEmbed
-          shortname="https-gleidsonmt-github-io"
+          shortname="https-gleidsonmt-github-io-blog-post-1"
           config={{
             // url: this.props.article.url,
             // url: "http://localhost:5173/#/blog/post/0",
-            url: "https://" + global.assets + "/#/blog/post/",
+            url: "https://" + global.assets + "/#/blog/post/" + id,
             // identifier: this.props.article.id,
             identifier: "0",
             // title: this.props.article.title,
