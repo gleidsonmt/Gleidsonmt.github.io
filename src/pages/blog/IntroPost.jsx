@@ -1,10 +1,8 @@
 import React from "react";
 import img from "../../assets/img/img.jpg";
-import SocialButton from "../../components/SocialButton";
-import { SlSocialGithub } from "react-icons/sl";
 import { GrGithub } from "react-icons/gr";
 
-const IntroPost = ({ data }) => {
+const IntroPost = () => {
   return (
     <div className="grid grid-cols-12 px-10 md:px-15 lg:px-32 place-items-center gap-8 w-full mt-20 mb-32 order-0">
       <img

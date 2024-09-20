@@ -19,7 +19,7 @@ const Certificates = () => {
   ];
 
   return (
-    <div className="mt-10 flex items-center flex-wrap justify-evenly gap-20">
+    <div className="mt-10 mb-10 flex items-center flex-wrap justify-evenly gap-20">
       {certficates.map((el, index) => (
         <div key={index} className={` justify-items-center `}>
           <img

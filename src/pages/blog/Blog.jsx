@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import IntroPost from "./IntroPost";
 import Search from "./Search";
 import Blogs from "./Blogs";
-import Data from "../posts_data";
+import posts from "../PostsData";
 
 const Blog = () => {
-  const [orgPost, setOrgPost] = useState(Data);
+  const [orgPost, setOrgPost] = useState(posts);
   const [currentTag, setCurrentTag] = useState("All");
   const [currentSearch, setCurrentSearch] = useState("");
   const [order, setOrder] = useState(0);
 
   function filterPost(tag, name) {
     if (tag.toLowerCase() == "all" && name.toLocaleLowerCase() === "") {
-      setOrgPost(Data);
+      setOrgPost(posts);
       return;
     }
 
-    const result = Data.filter((item) =>
+    const result = posts.filter((item) =>
       tag.toLowerCase() == "all"
         ? item.title.toLowerCase().includes(currentSearch.toLocaleLowerCase())
         : name == ""
@@ -52,7 +52,7 @@ const Blog = () => {
 
   return (
     <div className="mx-auto max-w-7xl flex flex-col">
-      <IntroPost data={Data[0]} ordernation={order} />
+      <IntroPost data={posts[0]} ordernation={order} />
 
       <Search
         selectedTag={(tag) => filterPostTag(tag)}

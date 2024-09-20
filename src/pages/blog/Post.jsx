@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Data from "../posts_data";
+import posts from "../PostsData";
 import { useLocation, useParams } from "react-router-dom";
 
 import "../codeblocks/web/styles/github.min.css";
@@ -11,10 +11,12 @@ import { GrGithub } from "react-icons/gr";
 
 import global from "../../Global";
 
+import dayjs from "dayjs";
+
 const Post = () => {
   const { id } = useParams();
 
-  const post = Data.filter((el) => el.id == id)[0];
+  const post = posts.filter((el) => el.id == id)[0];
   const [content, setContent] = useState("");
 
   useEffect(() => {
@@ -28,6 +30,8 @@ const Post = () => {
   function highCode() {
     hljs.highlightAll();
   }
+
+  // https://https-gleidsonmt-github-io.disqus.com/admin/settings/react/
 
   return (
     // <div className="grid grid-cols-1 p-24 place-items-start">

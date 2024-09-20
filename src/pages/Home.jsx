@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
 import Section from "../components/Section";
-
 import Introduction from "../components/Introduction";
 import Wallpaper from "../components/Wallpaper";
 import Divider from "../components/Divider";
-
 import About from "../components/About";
 import Skills from "../components/Skills";
-import global from "../Global";
 import Certificates from "./Certificates";
 
 const Home = () => {

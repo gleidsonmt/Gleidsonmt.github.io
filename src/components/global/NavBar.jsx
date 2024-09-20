@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import LinkTop from "./LinkTop";
-import logo from "../assets/img/logo_128.png";
+import LinkTop from "../global/LinkTop";
+import logo from "../../assets/img/logo_128.png";
 import { HiFire } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
 
