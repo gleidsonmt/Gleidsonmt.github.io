@@ -63,7 +63,7 @@ const PostMarked = ({ content }) => {
               // src={"./src/assets/img/gif_circle.gif"}
               src={global.assets + props.src}
               alt={props.alt}
-              className="max-w-3xl"
+              className="object-contain"
             />
           );
         },
@@ -82,8 +82,12 @@ const PostMarked = ({ content }) => {
                 id="block"
                 style={{
                   backgroundColor: "rgb(243 244 246 / var(--tw-bg-opacity))",
+                  overflow: "hidden",
+                  // whiteSpace: "preserve-breaks",
+                  whiteSpace: "preserve-breaks",
+                  wordBreak: "break-word",
                 }}
-                className={`text-left  w-full bg-gray-100 ${language}`}
+                className={`text-left  w-auto bg-gray-100 ${language}`}
                 {...res}
               ></code>
             </pre>

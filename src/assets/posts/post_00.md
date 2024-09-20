@@ -2,8 +2,6 @@
 
 Let's start visualizing what we are building.. most layout panes can fit well here.. we don't need to manage too many children.. and the items are top and down. Only circles need to be above each other.. and the title and legends can be changed in the component.. let's create an interface for further implementations.
 
----
-
 ### The interface
 
 ```java
