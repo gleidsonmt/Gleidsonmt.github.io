@@ -12,15 +12,17 @@ const posts = [
     img: img_0,
     md: "post_00",
   },
-  {
-    id: 1,
-    title: "Another Circular",
-    category: "Component Test",
-    desc: "A JavaFX node/page that appears when you need to work in the background",
-    tag: "JavaFx",
-    img: img_0,
-    md: "post_01",
-  },
+  // nesta aki ja tem ate uma discussao com o nome errado no disqus.. tem q arrumar
+  // assim q tiver o proximo artigo
+  // {
+  //   id: 1,
+  //   title: "Another Circular",
+  //   category: "Component Test",
+  //   desc: "A JavaFX node/page that appears when you need to work in the background",
+  //   tag: "JavaFx",
+  //   img: img_0,
+  //   md: "post_01",
+  // },
 ];
 
 export default posts;

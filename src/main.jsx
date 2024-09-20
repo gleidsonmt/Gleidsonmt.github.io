@@ -14,10 +14,6 @@ import Home from "./pages/Home.jsx";
 import Blog from "./pages/blog/Blog.jsx";
 import Post from "./pages/blog/Post.jsx";
 
-import CodeBlock from "./pages/codeblocks/CodeBlock.jsx";
-
-import Footer from "./pages/Footer.jsx";
-
 // const routes = createBrowserRouter([
 //   {
 //     path: "/",

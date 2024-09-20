@@ -4,7 +4,7 @@ import { useState } from "react";
 import NavBar from "./components/global/NavBar";
 
 import { Outlet } from "react-router-dom";
-import Footer from "./pages/Footer";
+import Footer from "./pages/global/Footer";
 import hljs from "./pages/codeblocks/web/highlight";
 
 import global from "./Global";
