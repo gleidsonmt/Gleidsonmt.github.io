@@ -15,9 +15,7 @@ const NavBar = ({ scrollPos, global }) => {
     setLang(navigator.language);
 
     // console.log(data.pt);
-
     // console.log(document.getElementById("teste"));
-
     //   .then((data) => setLang(data));
 
     // console.log(document.querySelectorAll(".tkey"));
@@ -47,18 +45,6 @@ const NavBar = ({ scrollPos, global }) => {
   //   // if (location.hash) {
   //   //   lastHash.current = location.hash.slice(1); // safe hash for further use after navigation
   //   // }
-
-  //   console.log(lastHash);
-  //   console.log(document.getElementById(lastHash.current));
-  //   if (lastHash.current && document.getElementById(lastHash.current)) {
-  //     setTimeout(() => {
-  //       document
-  //         .getElementById(lastHash.current)
-  //         ?.scrollIntoView({ behavior: "smooth", block: "start" });
-  //       lastHash.current = "";
-  //     }, 100);
-  //   }
-  // }, [location]);
 
   function goFooter() {
     setTimeout(() => {
@@ -98,7 +84,6 @@ const NavBar = ({ scrollPos, global }) => {
         {/* <LinkTop link={lastHash} > */}
         {/* <p>{lang == "pt-BR" ? "Contato" : "Contact"}</p> */}
         {/* </LinkTop> */}
-        {/* <a onChange={goFooter}>Contact</a> */}
         <LinkTop link="#footer"> Contact </LinkTop>
         <LinkTop link="https://gleidisonmt.hackerresume.io/6d4ecedf-6e8c-4156-936a-ad82f0225d16">
           Resume
@@ -113,7 +98,7 @@ const NavBar = ({ scrollPos, global }) => {
     <nav
       className={`nav-bar ${
         scrollPos > 10 ? "fixed shadow-sm bg-white" : ""
-      }  h-50 sm:h-22 fixed top-0 start-0 w-ful z-20 w-full`}
+      }  h-50 sm:h-22 fixed top-0 start-0  z-0   right-4`}
     >
       <div className="flex items-center mx-20 p-2 z-20 h-auto  md:justify-between tablet:justify-between  justify-center md:flex-row flex-col">
         <a href="/" className="flex items-center space-x-3 ">
