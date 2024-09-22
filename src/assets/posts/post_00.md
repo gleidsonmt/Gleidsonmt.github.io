@@ -1,8 +1,8 @@
-## Starting
+## 📑 Starting
 
 Let's start visualizing what we are building.. most layout panes can fit well here.. we don't need to manage too many children.. and the items are top and down. Only circles need to be above each other.. and the title and legends can be changed in the component.. let's create an interface for further implementations.
 
-### The interface
+### 🎯 The interface
 
 ```java
 public interface SuspenseLoader {
@@ -19,7 +19,7 @@ public interface SuspenseLoader {
 
 ---
 
-### The Structure
+### 🧬 The Structure
 
 Only if you need to use a label as a legend will you need this.. if you don't need a legend.. start with a stack pane as root.. now you can see things as a tree
 
@@ -35,7 +35,8 @@ Only if you need to use a label as a legend will you need this.. if you don't ne
 
 ```
 
-There are basic two sections.. the container circle section and the legend section.. if you noticed is the same structure in the three loaders.. well.. they're called circle loaders on purpose.. to do this let's create a boilerplate an abstract class.. and as long you know there's a layout that lays out its children in a single vertical column (VBox). So let's begin with it.
+🗺️ There are basic two sections.. the container circle section and the legend section.. if you noticed is the same structure in the three loaders.. well.. they're called circle loaders on purpose.. to do this let's create a boilerplate, an abstract class.. and as long you know there's a layout that lays out its children in a single vertical column (VBox). So let's begin with it.
+👨‍💻
 
 ```java
 public abstract class CircleLoader extends VBox { // The boilerplate and the node as CircleLoader class
@@ -97,7 +98,7 @@ public abstract class CircleLoader extends VBox implements SuspenseLoader {
 }
 ```
 
-Well it's been well node content until now.. let's create the real layout
+Well it's been only node content until now.. let's create the real layout
 
 ```java
 ...
@@ -108,28 +109,30 @@ public CircleLoader(String _title, String _legend) {
     this.setAlignment(Pos.CENTER);
     this.getStyleClass().add(0, "circle-loader");
     // Setting the children
-    StackPane circleContainer = createCircleContainer();
+    StackPane circleContainer = createCircleContainer(); // Creating circles will be response to concrete classes
     circleContainer.getStyleClass().add("container-circle");
     circleContainer.getChildren().add(title);
+    this.getChildren().setAll(circleContainer, legend);
 }
 
 public abstract StackPane createCircleContainer(); // this method will called by his concret class
 ...
 ```
 
-Now the animation.. all circles will have infinity animations.. make an default animation
+Now the animation.. all circles will have infinity similar animations.. make an default animation it's not easy... but as long I know what in the future can be..
 
 ```java
-// the circle | the starting angle | the duration in seconds
-protected void rotate(Circle circle, int angle, int duration) {
-    RotateTransition transition = new RotateTransition(Duration.seconds(duration), circle);
 
-    transition.setByAngle(angle); // start angle
-    transition.setInterpolator(Interpolator.LINEAR);// trye to create an easy out.. or a tangent effect
-    transition.setCycleCount(Timeline.INDEFINITE); /// infinite roatation
-    transition.play();
+    // So first all I'll create the most universal method that can create an animation for circles
+    // The circle to animate | The starting angle | Duration in second
+    protected void rotate(Circle circle, int angle, int duration) {
+        RotateTransition transition = new RotateTransition(Duration.seconds(duration), circle);
+        transition.setInterpolator(Interpolator.LINEAR);
+        transition.setByAngle(angle);
+        transition.setCycleCount(Timeline.INDEFINITE);
+        transition.play();
+    }
 
-}
 ```
 
 Now the base class ist created, now to extend and create the first circle loader
@@ -180,6 +183,8 @@ private StackPane createCircleContainer() {
     trackCircle.setStyle("-fx-stroke-dash-array : 600; -fx-stroke-dash-offset: 600;");
 
     circleContainer.getChildren().setAll(foreground, trackCircle);
+    rotate(trackCircle, 360, 2, false); // The auto reverse parameter needs to be false here
+    // you don't an animation reversing..
 
     return circleContainer;
 }
@@ -265,7 +270,31 @@ public class TechCircle extends CircleLoader implements SuspenseLoader {
 }
 ```
 
-The same strategy..
+The same strategy.. but.. since will have three circles have the animation rotation, only diference between them its properties..
+
+```java
+
+    // So first all I'll create the most universal method that can create an animation for circles
+    protected void rotate(Circle circle, int angle, int duration, boolean autoReverse) { // add the parameter autoReverse in the universal rotate method
+        RotateTransition transition = new RotateTransition(Duration.seconds(duration), circle);
+
+        transistion.setAutoReverse(autoReverse); // here pass the parameter to the object
+        ...
+    }
+
+    // This will be called by Suspense Circle
+    protected void rotate(Circle circle, int angle, int duration, boolean autoReverse) {
+        rotate(circle, angle, duration, autoReverse);
+    }
+
+    // Preserve the original method.. calling the universal rotate
+    // This will be called by Tech Circle
+    protected void rotate(Circle circle, int angle, int duration) {
+        rotate(circle, angle, duration, true);
+    }
+```
+
+So now it's possible to create our circle and making rotating with auto reverse property..
 
 ```java
     @Override
@@ -287,7 +316,7 @@ The same strategy..
         circles.get(2).setRadius(85);
 
         // start with diferent angles per circle and speed
-        rotate(circles.get(0), 180, 18);
+        rotate(circles.get(0), 180, 18 );
         rotate(circles.get(1), 360, 10);
         rotate(circles.get(2), 60, 22);
 
@@ -304,7 +333,8 @@ Now the same pattern to build 3D circle
 
 ```java
 public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
-        public Suspense3DCircle() {
+
+    public Suspense3DCircle() {
         super();
         this.getStyleClass().set(0, "DCircle");
     }
@@ -323,23 +353,29 @@ public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
 }
 ```
 
-Now create a method that's only for 3D circle.. if notice this methods has Point3D as a parameter.. thats indicates a rotation with Z axis
+Here is almost the same, but with one problem to solve.. the 3D circle class here needs a property animation setting a point 3D..
+but the method rotate from super class doesn't make that.. so we need to create another method to pass a correct property to an animation..
+now there's some options here.. but I don't like to write to many lines if you don't need.. so I'll use my best approach..
+making another method that receives the property I pretend to modify in object inside the method scope.. see below.
 
 ```java
 public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
     ...
 
-    private void rotate(Circle circle, int angle, Point3D point) {
-        RotateTransition rotate = new RotateTransition(Duration.seconds(5), circle);
+    // Add a new parameter in universal rotate method
+    protected void rotate(Circle circle, int angle, int duration, boolean autoReverse, Point3D point) {
+        RotateTransition rotate = new RotateTransition(duration, circle);
+        ...
+        if (point != Point3D.ZERO) { // verify the need to set axis
+            rotate.setAxis(point);
+        }
+        ...
 
-        rotate.setAxis(point);
-        rotate.setAutoReverse(true);
+    }
 
-        rotate.setByAngle(angle);
-        rotate.setInterpolator(Interpolator.LINEAR);
-        rotate.setCycleCount(Timeline.INDEFINITE);
-        rotate.play();
-
+    // Maintaingi the universal method
+    protected void rotate(Circle circle, int angle, int duration, Point3D point3D) {
+        rotate(circle, angle, duration, true, point3D);
     }
 }
 ```
@@ -363,10 +399,10 @@ Overriding the creator circle method
             circles.add(circle);
         }
 
-        rotate(circles.get(0), 360,  new Point3D(100, 0, 0));
-        rotate(circles.get(1), 180, new Point3D(100,100,0));
-        rotate(circles.get(2), 270, new Point3D(100,50,0));
-        rotate(circles.get(3), 90, new Point3D(100,100,0));
+        rotate(circles.get(0), 360,  new Point3D(100, 0,  0));
+        rotate(circles.get(1), 180,  new Point3D(100, 100,0));
+        rotate(circles.get(2), 270,  new Point3D(100, 50, 0 ));
+        rotate(circles.get(3), 90,   new Point3D(100, 100,0));
 
         circleContainer.getChildren().setAll(circles);
         return circleContainer;
@@ -456,5 +492,5 @@ If you need more.. here is a few example of using tasks
         suspenseCircle.legendProperty().bind(task.messageProperty());
 ```
 
-That's all folks..
+🤠 That's all folks.. the full code is here,
 You can see a gist by clicking on the button below.

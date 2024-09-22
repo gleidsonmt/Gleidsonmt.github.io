@@ -51,7 +51,7 @@ const Post = () => {
         </div>
 
         <a
-          href=" https://github.com/gleidsonmt"
+          href="https://gist.github.com/gleidsonmt/e6bacc732b27c464fd80f0cbe3a135d8"
           className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-105 transition-all duration-100 ease-in-out w-full bg-gray-100 rounded-lg"
         >
           <GrGithub className="text-gray-600" />
