@@ -50,6 +50,13 @@ const Post = () => {
           {hljs.highlightAll()}
         </div>
 
+        <a
+          href=" https://github.com/gleidsonmt"
+          className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-105 transition-all duration-100 ease-in-out w-full bg-gray-100 rounded-lg"
+        >
+          <GrGithub className="text-gray-600" />
+          GitHub Gist
+        </a>
         <DiscussionEmbed
           shortname="https-gleidsonmt-github-io"
           config={{
@@ -63,14 +70,6 @@ const Post = () => {
             language: "en", //e.g. for Traditional Chinese (Taiwan)
           }}
         />
-
-        <a
-          href=" https://github.com/gleidsonmt"
-          className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out "
-        >
-          <GrGithub className="text-gray-600" />
-          GitHub Gist
-        </a>
       </div>
     </div>
   );

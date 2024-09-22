@@ -187,7 +187,7 @@ private StackPane createCircleContainer() {
 
 ---
 
-At this point, we finished the first of three loaders.. the circle loader.
+At this point, we finished the first of three loaders.. the suspense loader.
 Let's add some css..
 
 ```css
@@ -300,6 +300,8 @@ The same strategy..
     }
 ```
 
+Now the same pattern to build 3D circle
+
 ```java
 public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
         public Suspense3DCircle() {
@@ -321,26 +323,7 @@ public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
 }
 ```
 
-```java
-public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
-    public Suspense3DCircle() {
-        super();
-        this.getStyleClass().set(0, "DCircle");
-    }
-
-    public Suspense3DCircle(String _title, String _legend) {
-        super(_title, _legend);
-        this.getStyleClass().set(0, "DCircle");
-    }
-
-      @Override
-    protected StackPane createCircleContainer() {
-        StackPane circleContainer = new StackPane();
-        ....
-        return circleContainer;
-    }
-}
-```
+Now create a method that's only for 3D circle.. if notice this methods has Point3D as a parameter.. thats indicates a rotation with Z axis
 
 ```java
 public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
@@ -360,6 +343,8 @@ public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
     }
 }
 ```
+
+Overriding the creator circle method
 
 ```java
     @Override
@@ -388,6 +373,8 @@ public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
     }
 ```
 
+The final css with all circles..
+
 ```css
 .root {
   -fx-background-color: white;
@@ -413,6 +400,8 @@ public class Suspense3DCircle extends CircleLoader implements SuspenseLoader {
   -fx-font-size: 14pt;
 }
 ```
+
+Now I'll change the app class for show the three circles in the same stage...
 
 ```java
 public class App extends Application {
@@ -445,6 +434,8 @@ public class App extends Application {
 
 ![alt text](src/assets/img/final_circles.gif)
 
+If you need more.. here is a few example of using tasks
+
 ### Using tasks
 
 ```java
@@ -464,3 +455,6 @@ public class App extends Application {
         suspenseCircle.titleProperty().bind(task.titleProperty());
         suspenseCircle.legendProperty().bind(task.messageProperty());
 ```
+
+That's all folks..
+You can see a gist by clicking on the button below.

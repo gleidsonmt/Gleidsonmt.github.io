@@ -28,7 +28,7 @@ const Certificates = () => {
             className="max-w-md rounded-xl"
           />
           <h5 className="instagram-headline">{el.name}</h5>
-          <p className="">{el.from}</p>
+          <p className="text-accent">{el.from}</p>
           <div className="flex flex-col mt-2">
             <p className="text-gray-600 ">{el.finishedAt}</p>
           </div>
