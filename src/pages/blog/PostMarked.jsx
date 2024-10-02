@@ -84,7 +84,8 @@ const PostMarked = ({ content }) => {
                   backgroundColor: "rgb(243 244 246 / var(--tw-bg-opacity))",
                   overflow: "hidden",
                   whiteSpace: "pre-wrap",
-                  wordBreak: "break-all",
+                  wordBreak: "break-word",
+                  // wordWrap: "break-word",
                 }}
                 className={`text-left  w-auto bg-gray-100 ${language}`}
                 {...res}
