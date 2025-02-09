@@ -3,16 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
-import {
-  createBrowserRouter,
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Root13 from "./pages/challenges/Root13.jsx";
-import Romanos from "./pages/challenges/Romanos.jsx";
-import Home from "./pages/Home.jsx";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Blog from "./pages/blog/Blog.jsx";
 import Post from "./pages/blog/Post.jsx";
+import { CarouselPage } from "./pages/carousel/CarouselPage.jsx";
+import Home from "./pages/Home.jsx";
 
 // const routes = createBrowserRouter([
 //   {
@@ -101,6 +96,10 @@ const routes = createHashRouter([
         path: "/*/blog/post/:id",
         element: <Post />,
       },
+      {
+        path: "/*/carousel",
+        element: <CarouselPage />,
+      },
     ],
   },
 ]);
@@ -124,4 +123,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={routes} />
   </React.StrictMode>
 );
-

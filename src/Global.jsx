@@ -6,3 +6,6 @@ const global = {
 };
 
 export default global;
+
+// https://www.material-tailwind.com/docs/react/
+// https://www.material-tailwind.com/docs/react/carousel#carousel

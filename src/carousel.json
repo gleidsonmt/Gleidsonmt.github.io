@@ -1,0 +1,16 @@
+{
+    "slides": [
+        {
+            "src": "/src/assets/img/carousel/fintory.png",
+            "alt": "img1"
+        },
+        {
+            "src": "/src/assets/img/carousel/fitmeal.png",
+            "alt": "img1"
+        },
+        {
+            "src": "/src/assets/img/man2.jpg",
+            "alt": "img1"
+        }
+    ]
+}
