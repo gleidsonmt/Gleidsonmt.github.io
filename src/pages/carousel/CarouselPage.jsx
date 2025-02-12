@@ -5,8 +5,14 @@ import "./carousel.css";
 
 import { slides } from "../../carousel.json";
 
+import global from "../../Global";
+
 export const CarouselPage = () => {
   const [slide, setSlide] = useState(0);
+
+  // if (window.location.host.includes("localhost")) {
+  //   global.assets = "";
+  // }
 
   const nextSlide = () => {
     setSlide(slide == slides.length - 1 ? 0 : slide + 1);
@@ -23,7 +29,7 @@ export const CarouselPage = () => {
         {slides.map((item, index) => {
           return (
             <img
-              src={item.src}
+              src={global.assets + item.src}
               alt={item.alt}
               key={index}
               className={slide === index ? "slide  " : "slide slide-hidden"}
