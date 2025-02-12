@@ -9,6 +9,7 @@ import Post from "./pages/blog/Post.jsx";
 import { CarouselPage } from "./pages/carousel/CarouselPage.jsx";
 import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
+import Root13 from "./pages/challenges/Root13.jsx";
 
 // const routes = createBrowserRouter([
 //   {
@@ -105,6 +106,10 @@ const routes = createHashRouter([
       {
         path: "/*/romanos",
         element: <Romanos />,
+      },
+      {
+        path: "/*/root13",
+        element: <Root13 />,
       },
     ],
   },
