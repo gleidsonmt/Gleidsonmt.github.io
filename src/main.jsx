@@ -7,6 +7,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Blog from "./pages/blog/Blog.jsx";
 import Post from "./pages/blog/Post.jsx";
 import { CarouselPage } from "./pages/carousel/CarouselPage.jsx";
+import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
 
 // const routes = createBrowserRouter([
@@ -99,6 +100,11 @@ const routes = createHashRouter([
       {
         path: "/*/carousel",
         element: <CarouselPage />,
+      },
+      // Challenges
+      {
+        path: "/*/romanos",
+        element: <Romanos />,
       },
     ],
   },
