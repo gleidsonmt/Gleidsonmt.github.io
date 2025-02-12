@@ -6,7 +6,6 @@ const Root13 = () => {
   const [rightValue, setRightValue] = useState("Texto Encriptado");
 
   function convertLeftSide(e) {
-    console.log("what");
     setRightValue(e.target.value);
     setLeftValue(rot13(false, e.target.value.toUpperCase()));
   }

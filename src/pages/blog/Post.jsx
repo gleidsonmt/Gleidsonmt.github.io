@@ -61,7 +61,7 @@ const Post = () => {
           shortname="https-gleidsonmt-github-io"
           config={{
             // url: this.props.article.url,
-            url: "https://gleidsonmt.github.io",
+            url: "https://gleidsonmt.github.io/#/blog/post/" + post.id,
             // identifier: this.props.article.id,
             identifier: post.id.toString(),
             // title: this.props.article.title,
