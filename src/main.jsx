@@ -10,6 +10,7 @@ import { CarouselPage } from "./pages/carousel/CarouselPage.jsx";
 import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
 import Root13 from "./pages/challenges/Root13.jsx";
+import BinaryConverter from "./pages/challenges/BinaryConverter.jsx";
 
 // const routes = createBrowserRouter([
 //   {
@@ -110,6 +111,10 @@ const routes = createHashRouter([
       {
         path: "/*/root13",
         element: <Root13 />,
+      },
+      {
+        path: "/*/binary",
+        element: <BinaryConverter />,
       },
     ],
   },
