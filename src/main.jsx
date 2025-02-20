@@ -11,6 +11,9 @@ import Romanos from "./pages/challenges/Romanos.jsx";
 import Home from "./pages/Home.jsx";
 import Root13 from "./pages/challenges/Root13.jsx";
 import BinaryConverter from "./pages/challenges/BinaryConverter.jsx";
+import Quiz from "./pages/challenges/quiz/Quiz.jsx";
+import Highscores from "./pages/challenges/Highscores.jsx";
+import Game from "./pages/challenges/quiz/Game.jsx";
 
 // const routes = createBrowserRouter([
 //   {
@@ -115,6 +118,19 @@ const routes = createHashRouter([
       {
         path: "/*/binary",
         element: <BinaryConverter />,
+      },
+      {
+        path: "/*/quiz",
+        element: <Quiz />,
+        children: [],
+      },
+      {
+        path: "/*/quiz/highscores",
+        element: <Highscores />,
+      },
+      {
+        path: "/*/quiz/game",
+        element: <Game />,
       },
     ],
   },
