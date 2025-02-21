@@ -27,7 +27,6 @@ const Game = () => {
 
     choices.forEach((choice) => {
       choice.addEventListener("click", (e) => {
-        console.log("clicked");
         if (!acceptingAnswers) return;
         acceptingAnswers = false;
         const selectedChoice = e.target;

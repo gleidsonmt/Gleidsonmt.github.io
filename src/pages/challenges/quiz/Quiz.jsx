@@ -8,10 +8,8 @@ const Quiz = () => {
       <div id="home" className="flex flex-col space-y-4">
         <h1>Quiz Raiz</h1>
         <Button link="#/quiz/game">Jogar</Button>
-        <Button link="#/quiz/Highscores">Tops</Button>
-        <a class="bg-transparent hover:bg-accent text-accent font-semibold hover:text-white py-2 px-4 border border-accent hover:border-transparent cursor-pointer rounded active:animate-ping">
-          Retornar ao Site
-        </a>
+        <Button link="#/quiz/highscores">Tops</Button>
+        <Button link="#/">Retornar ao Site</Button>
       </div>
     </div>
   );

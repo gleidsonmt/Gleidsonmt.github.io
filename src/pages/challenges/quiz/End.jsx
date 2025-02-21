@@ -2,70 +2,73 @@ import React, { useEffect } from "react";
 import Button from "./Button";
 
 const End = () => {
-  const saveScoreBtn = document.getElementById("saveScoreBtn");
+  const mostRecentScore = localStorage.getItem("mostRecentScore");
+  const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
   useEffect(() => {
-    const finalScore = document.getElementById("finalScore");
-    const mostRecentScore = localStorage.getItem("mostRecentScore");
-
-    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
     const MAX_HIGH_SCORES = 5;
 
+    const username = document.getElementById("username");
+    const finalScore = document.getElementById("finalScore");
     finalScore.innerText = mostRecentScore;
-  });
 
-  //   username.addEventListener("keyup", () => {
-  //     saveScoreBtn.disabled = !username.value;
-  //   });
+    username.addEventListener("keyup", (e) => {
+      e.preventDefault();
+      const saveScoreBtn = document.getElementById("saveScoreBtn");
+      saveScoreBtn.disabled = !username.value;
+    });
+  });
 
   const saveHighScore = (e) => {
     e.preventDefault();
-    console.log("iyou");
-    //     const username = document.getElementById("username");
-    //     const score = {
-    //       score: mostRecentScore,
-    //       name: username.value,
-    //     };
+    const username = document.getElementById("username");
 
-    //     highScores.push(score);
-    //     highScores.sort((a, b) => {
-    //       return b.score - a.score;
-    //     });
-    //     highScores.splice(5);
-    //     localStorage.setItem("highScores", JSON.stringify(highScores));
+    const score = {
+      score: mostRecentScore,
+      name: username.value,
+    };
 
-    //     return window.location.assign("#/quiz/highscores");
+    highScores.push(score);
+    highScores.sort((a, b) => {
+      return b.score - a.score;
+    });
+    highScores.splice(5);
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
+    return window.location.assign("#/quiz/highscores");
+    // return window.location.assign("#/quiz/end");
+    // link="#/quiz/highscores"
   };
 
   return (
-    <div className="grid grid-col-12 space-y-2 h-full place-items-center">
+    <div className="grid grid-col-12 space-y-2 h-full place-items-center p-10">
       <div id="end" className="grid col-span-12 space-y-2">
-        <h1
-          id="finalScore"
-          className="col-span-12 space-y-2 place-items-center align-middle"
-        >
+        <h1 id="finalScore" className="col-span-12 space-y-2  ">
           0
         </h1>
-        <form className="grid grid-cols-12 col-span-12 space-y-2 space-x-2">
+        <div className="grid grid-cols-12 col-span-12  space-x-2 place-items-center">
           <input
             type="text"
             name="username"
             id="username"
             placeholder="username"
-            className="col-span-6"
+            className="h-full col-span-6"
+            style={{
+              border: "1px solid #000",
+              borderRadius: "1px",
+              padding: "15px",
+            }}
           />
           <button
-            disabled
+            // disabled
             type="submit"
-            className="btn cursor-pointer col-span-6"
+            className="btn cursor-pointer col-span-6 h-full w-full"
             id="saveScoreBtn"
             onClick={saveHighScore}
-            // onClick="saveHighScore(event)"
           >
             Salvar
           </button>
-        </form>
+        </div>
         <div className="col-span-12 grid space-y-2">
           <Button className="col-span-12" link="#/quiz/game">
             Jogar de Novo
