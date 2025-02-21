@@ -20,7 +20,34 @@ const Game = () => {
     game.classList.remove("hidden");
     loader.classList.add("hidden");
     questions = data;
+    max_questions = questions.length;
     startGame();
+
+    const choices = Array.from(document.getElementsByClassName("choice-text"));
+
+    choices.forEach((choice) => {
+      choice.addEventListener("click", (e) => {
+        console.log("clicked");
+        if (!acceptingAnswers) return;
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+
+        const classToApply =
+          selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+        if (classToApply == "correct") {
+          incrementScore(CORRECT_BONUS);
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+          selectedChoice.parentElement.classList.remove(classToApply);
+          getNewQuestion();
+        }, 1000);
+      });
+    });
   });
 
   const startGame = () => {
@@ -33,11 +60,11 @@ const Game = () => {
   const getNewQuestion = () => {
     const question = document.getElementById("question");
     const choices = Array.from(document.getElementsByClassName("choice-text"));
-    console.log(availableQuestions);
-    // if (availableQuestions.length === 0 || questionsCounter >= max_questions) {
-    //   localStorage.setItem("mostRecentScore", score);
-    //     return window.location.assign("#/quiz/end.html");
-    // }
+
+    if (availableQuestions.length === 0 || questionsCounter >= max_questions) {
+      localStorage.setItem("mostRecentScore", score);
+      return window.location.assign("#/quiz/end");
+    }
     questionsCounter++;
     progressText.innerText = `Questões ${questionsCounter}/${max_questions}`;
     // updae progrress bar
@@ -55,6 +82,12 @@ const Game = () => {
     acceptingAnswers = true;
   };
 
+  const incrementScore = (num) => {
+    const scoreText = document.getElementById("score");
+    score += num;
+    scoreText.innerText = score;
+  };
+
   return (
     <div className="grid grid-col-12 h-full place-items-center">
       <div className="container">
@@ -66,7 +99,7 @@ const Game = () => {
                 Question
               </p>
               <div id="progressBar">
-                <div id="progressBarFull"></div>
+                <div id="progressBarFull" className="h-full"></div>
               </div>
             </div>
 

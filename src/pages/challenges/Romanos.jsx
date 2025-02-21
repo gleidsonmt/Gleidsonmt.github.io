@@ -55,7 +55,7 @@ const Romanos = () => {
 function convertToRoman(num) {
   let arr = num.toString().split("");
   let newArr = [];
-  let simbols = ["M", "D", "C", "L", "X", "V", "I"];
+  let symbols = ["M", "D", "C", "L", "X", "V", "I"];
 
   function recurse(arr) {
     if (arr.length < 1) {
@@ -74,19 +74,19 @@ function convertToRoman(num) {
 
   function convertUnit(n, char) {
     let arr = [];
-    let index = simbols.indexOf(char);
+    let index = symbols.indexOf(char);
     if (n == 9) {
-      arr.push(char + simbols[index - 2]);
+      arr.push(char + symbols[index - 2]);
     } else if (n < 4) {
       arr.push(char.replace(/(\w+)/, "$1".repeat(n)));
     } else if (n == 4) {
-      arr.push(char + simbols[index - 1]);
+      arr.push(char + symbols[index - 1]);
     } else if (n == 5) {
       arr.push(
-        simbols[index - 1] === undefined ? simbols[0] : simbols[index - 1]
+        symbols[index - 1] === undefined ? symbols[0] : symbols[index - 1]
       );
     } else if (n > 5) {
-      arr.push(simbols[index - 1] + char.replace(/(\w+)/, "$1".repeat(n - 5)));
+      arr.push(symbols[index - 1] + char.replace(/(\w+)/, "$1".repeat(n - 5)));
     }
     return arr;
   }

@@ -14,6 +14,7 @@ import BinaryConverter from "./pages/challenges/BinaryConverter.jsx";
 import Quiz from "./pages/challenges/quiz/Quiz.jsx";
 import Highscores from "./pages/challenges/Highscores.jsx";
 import Game from "./pages/challenges/quiz/Game.jsx";
+import End from "./pages/challenges/quiz/End.jsx";
 
 // const routes = createBrowserRouter([
 //   {
@@ -131,6 +132,10 @@ const routes = createHashRouter([
       {
         path: "/*/quiz/game",
         element: <Game />,
+      },
+      {
+        path: "/*/quiz/end",
+        element: <End />,
       },
     ],
   },
