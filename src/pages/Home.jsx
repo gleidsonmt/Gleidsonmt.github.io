@@ -4,7 +4,7 @@ import Wallpaper from "../components/Wallpaper";
 import Divider from "../components/Divider";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Certificates from "./Certificates";
+import CertificateSection from "./CertificateSection";
 
 const Home = () => {
   return (
@@ -38,7 +38,7 @@ const Home = () => {
         <Divider orientation="hori" customClass="col-span-12 order-3" />
       </Section>
 
-      <Certificates />
+      <CertificateSection />
 
       {/* <div className="w-full my-20 flex justify-center items-center flex-wrap  ">
         <h2 className="flex w-full justify-center items-center gap-2 text-gray-500 font-semibold text-4xl flex-col my-10 lg:my-5 lg:gap-0">
