@@ -1,11 +1,9 @@
-import React, { createContext, useContext, useEffect } from "react";
-
 import { useState } from "react";
 import NavBar from "./components/global/NavBar";
 
 import { Outlet } from "react-router-dom";
-import Footer from "./pages/global/Footer";
 import hljs from "./pages/codeblocks/web/highlight";
+import Footer from "./pages/global/Footer";
 
 import global from "./Global";
 

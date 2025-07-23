@@ -7,84 +7,14 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Blog from "./pages/blog/Blog.jsx";
 import Post from "./pages/blog/Post.jsx";
 import { CarouselPage } from "./pages/carousel/CarouselPage.jsx";
-import Romanos from "./pages/challenges/Romanos.jsx";
-import Home from "./pages/Home.jsx";
-import Root13 from "./pages/challenges/Root13.jsx";
 import BinaryConverter from "./pages/challenges/BinaryConverter.jsx";
-import Quiz from "./pages/challenges/quiz/Quiz.jsx";
 import Highscores from "./pages/challenges/Highscores.jsx";
 import Game from "./pages/challenges/quiz/Game.jsx";
-import End from "./pages/challenges/quiz/End.jsx";
-
-// const routes = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home />,
-//       },
-//       {
-//         path: "/blog",
-//         element: <Blog />,
-//       },
-//       {
-//         path: "/blog/post/:id",
-//         element: <Post />,
-//         // path: "/blog/test/",
-//         // element: <Test />,
-//       },
-//       {
-//         path: "/romanos",
-//         element: <Romanos />,
-//       },
-//     ],
-//   },
-
-//   {
-//     path: "/root13",
-//     element: <Root13 />,
-//   },
-
-//   {
-//     path: "block",
-//     element: <CodeBlock />,
-//   },
-// ]);
-
-// const routes = createHashRouter([
-//   {
-//     path: "/*",
-//     element: <App />,
-//     children: [
-//       {
-//         path: "/home",
-//         element: <Home />,
-//         children: [
-//           {
-//             path: "/*/footer",
-//             element: <Footer />,
-//           },
-//         ],
-//       },
-//       {
-//         path: "blog",
-//         element: <Blog />,
-//         children: [
-//           {
-//             path: "blog#footer",
-//             element: <Footer />,
-//           },
-//         ],
-//       },
-//       {
-//         path: "blog/post/:id",
-//         element: <Post />,
-//       },
-//     ],
-//   },
-// ]);
+import Quiz from "./pages/challenges/quiz/Quiz.jsx";
+import Romanos from "./pages/challenges/Romanos.jsx";
+import Root13 from "./pages/challenges/Root13.jsx";
+import Extras from "./pages/Extras.jsx";
+import Home from "./pages/Home.jsx";
 
 const routes = createHashRouter([
   {
@@ -134,8 +64,8 @@ const routes = createHashRouter([
         element: <Game />,
       },
       {
-        path: "/*/quiz/end",
-        element: <End />,
+        path: "/*/extras",
+        element: <Extras />,
       },
     ],
   },
