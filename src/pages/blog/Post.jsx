@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import posts from "../PostsData";
+import posts from "../../assets/posts/PostsData";
 import { useLocation, useParams } from "react-router-dom";
 
 import "../codeblocks/web/styles/github.min.css";
@@ -20,10 +20,13 @@ const Post = () => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(global.assets + "/src/assets/posts/post_00.md")
+    console.log(post);
+    fetch(global.assets + `/src/assets/posts/post_0${post.id}.md`)
       // fetch("/src/assets/posts/post_00.md") // local
       .then((res) => res.text())
-      .then((text) => setContent(text));
+      .then((text) => {
+        setContent(text);
+      });
     highCode();
   }, []);
 
@@ -43,6 +46,11 @@ const Post = () => {
           </h3>
           <h3 className="font-bold text-gray-600 ">{post.title}</h3>
           <img src={post.img} className="rounded-2xl " alt="" />
+          <img
+            src="./src/assets/img/default-toggle.png"
+            className="rounded-2xl "
+            alt=""
+          />
           {/* <h4 className="mt-5 w-auto text-start text-gray-600 ">{post.desc}</h4> */}
         </div>
         <div className="flex flex-col justify-start items-start w-full max-w-5xl">

@@ -1,4 +1,4 @@
-import img_0 from "../assets/img/ezgif.gif";
+import img_0 from "../../assets/img/ezgif.gif";
 // import img1 from "../assets/img/ezgif.gif";
 // import img2 from "../assets/img/mountain-sunset-river-scenery.jpg";
 
@@ -11,6 +11,15 @@ const posts = [
     tag: "JavaFx",
     img: img_0,
     md: "post_00",
+  },
+  {
+    id: 1,
+    title: "Toggle Groups",
+    category: "Layuout",
+    desc: "Groups of buttons that can set a preference or make a choice.",
+    tag: "JavaFx",
+    img: img_0,
+    md: "post_01",
   },
   // nesta aki ja tem ate uma discussao com o nome errado no disqus.. tem q arrumar
   // assim q tiver o proximo artigo

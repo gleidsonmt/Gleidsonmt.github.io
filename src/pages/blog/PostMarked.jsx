@@ -56,12 +56,13 @@ const PostMarked = ({ content }) => {
         img(props) {
           const { node, ...rest } = props;
           //   return <img className="max-w-3xl" {...rest} />;
+          console.log(props.src);
           return (
             <img
               // src={global.assets + `./src${props.src}`}
-
               // src={"./src/assets/img/gif_circle.gif"}
-              src={global.assets + props.src}
+              // src={props.src}
+              src="../img/default-toggle.png"
               alt={props.alt}
               className="object-contain"
             />

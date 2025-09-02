@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import IntroPost from "./IntroPost";
 import Search from "./Search";
 import Blogs from "./Blogs";
-import posts from "../PostsData";
+import posts from "../../assets/posts/PostsData";
 
 const Blog = () => {
   const [orgPost, setOrgPost] = useState(posts);
