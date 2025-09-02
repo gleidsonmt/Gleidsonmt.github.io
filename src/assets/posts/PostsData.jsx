@@ -1,5 +1,5 @@
 import img_0 from "../../assets/img/ezgif.gif";
-import img_1 from "../../assets/img/toggle-style.png";
+import img_1 from "../../../public/assets/img/default_toggle.png";
 // import img2 from "../assets/img/mountain-sunset-river-scenery.jpg";
 
 const posts = [

@@ -4,7 +4,7 @@ Hello you, well let's think about toggle buttons, they are buttons that represen
 
 See this simple example.
 
-![Default Toggle](src/assets/img/default_toggle.png)
+<!-- ![Default Toggle](/public/assets/img/default_toggle.png) -->
 
 ### The Result
 

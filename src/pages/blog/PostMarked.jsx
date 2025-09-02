@@ -12,30 +12,6 @@ const PostMarked = ({ content }) => {
       remarkPlugins={[[remarkGfm, { singleTilde: false }]]}
       className="flex flex-col w-full text-left my-20 h-full gap-y-10"
       components={{
-        // // Map `h1` (`# heading`) to use `h2`s.
-        // h1: "h2",
-        // // Rewrite `em`s (`*like so*`) to `i` with a red foreground color.
-        // em(props) {
-        //   const { node, ...rest } = props;
-        //   return <i style={{ color: "red" }} {...rest} />;
-        // },
-        // code: "code",
-
-        // code(props) {
-        //   const { node, className, ...rest } = props;
-        //   console.log(className);
-        //   return (
-        //     // <BlockCode language="css" {...rest}>
-        //     //   node
-        //     // </BlockCode>
-        //     <code
-        //       id="block"
-        //       className="text-left language-css bg-gray-600 w-full"
-        //       {...rest}
-        //     />
-        //   );
-        // },
-
         h2(props) {
           const { ...rest } = props;
           return <h2 className=" text-7xl text-gray-700 font-bold" {...rest} />;
@@ -56,16 +32,8 @@ const PostMarked = ({ content }) => {
         img(props) {
           const { node, ...rest } = props;
           //   return <img className="max-w-3xl" {...rest} />;
-          console.log(global.assets + props.src);
           return (
-            <img
-              // src={global.assets + `./src${props.src}`}
-              // src={"./src/assets/img/gif_circle.gif"}
-              // src={global.assets + props.src}
-              src={global.assets + props.src}
-              alt={props.alt}
-              className="object-contain"
-            />
+            <img src={props.src} alt={props.alt} className="object-contain" />
           );
         },
 
