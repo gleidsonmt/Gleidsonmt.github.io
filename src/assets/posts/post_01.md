@@ -1,15 +1,11 @@
 ## 📑 Starting
 
-Hello you, well let's think about toggle buttons, they are buttons that represents selection, normally you see this in forms to select preferences or swithing among the options.
+Hello you, well let's think about toggle buttons, they are buttons that represent selection, normally you see this in forms to select preferences or switching among the options.
 
-See this simple example.
+---
 
-<!-- ![Default Toggle](/public/assets/img/default_toggle.png) -->
-
-### The Result
-
-Lets make our boierplate.
-First I assume you can create a javafx project with any ide an run.
+Let's make our boierplate.
+First, I assume you can create a javafx project with any ide an run.
 And you have the main class extending App class
 
 ```java
@@ -44,8 +40,9 @@ public class App extends Application {
 
 ```
 
-Let's focus on two things, a method that create our control and the css file and.  
+Let's focus on two things, a method that create our control and the css file.  
 First createControl() method create a Pane that will the layout root of the control.
+Inside that put this
 
 ```java
   ...
@@ -58,7 +55,7 @@ First createControl() method create a Pane that will the layout root of the cont
   content.getChildren().addAll(left, right);
 ```
 
-Let's switch to master css
+Let's switch to master css file.
 This is what my mind bring to code.
 
 ```css
@@ -90,7 +87,7 @@ This is what my mind bring to code.
 }
 ```
 
-But the buttons are action wrong, the two get selected at the same time.
+But the buttons aren't acting as expected, the two get selected at the same time.  
 Fix, create a group.
 
 ```java
@@ -99,5 +96,5 @@ Fix, create a group.
   group.getToggles().addAll(right, left);
 ```
 
-In the final it's all about creating a cool layout.
-You can change graphic, style of the nodes to create a most intereactive control.
+In the final, it's all about creating a cool layout.  
+Changing a graphic, styling nodes results in the interative control.

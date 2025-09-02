@@ -8,9 +8,9 @@ const IntroPost = () => {
       <img
         src={img}
         alt=""
-        className="rounded-full object-contain w-full h-full lg:col-span-6 xl:max-h-[500px] min-h-[200px] col-span-12 md:object-contain md:max-h-[500px] opacity-95"
+        className="round object-contain w-full h-full lg:col-span-3 col-span-2 md:object-contain opacity-95"
       />
-      <div className="flex flex-col items-center justify-center col-span-12 lg:col-span-6">
+      <div className="flex flex-col items-center justify-center col-span-6 lg:col-span-9">
         <h4 className="text-accent instagram-headline font-bold">
           Welcome to my blog.
         </h4>
