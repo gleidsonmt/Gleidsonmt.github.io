@@ -1,7 +1,7 @@
 const global = {
   homepage: "gleidsonmt.github.io",
   assets:
-    "https://raw.githubusercontent.com/gleidsonmt/Gleidsonmt.github.io/refs/heads/master/",
+    "https://raw.githubusercontent.com/gleidsonmt/gleidsonmt.github.io/refs/heads/master/",
   courses: "https://raw.githubusercontent.com/gleidsonmt/courses/main/",
 };
 

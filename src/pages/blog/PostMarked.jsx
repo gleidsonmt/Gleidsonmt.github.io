@@ -62,7 +62,7 @@ const PostMarked = ({ content }) => {
               // src={global.assets + `./src${props.src}`}
               // src={"./src/assets/img/gif_circle.gif"}
               // src={global.assets + props.src}
-              src="../src/assets/img/toggle-style.png"
+              src={global.assets + props.src}
               alt={props.alt}
               className="object-contain"
             />
