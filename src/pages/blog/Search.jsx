@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import img from "./../../assets/img/headphones-paint-color.jpg";
-// import img from "./../../assets/img/mountain-sunset-river-scenery.jpg";
 import { IoSearchOutline } from "react-icons/io5";
-// import img from "./../../assets/img/man.jpg";
 const Search = ({ selectedTag, currentSearch, closeAction }) => {
   const tags = [
     {

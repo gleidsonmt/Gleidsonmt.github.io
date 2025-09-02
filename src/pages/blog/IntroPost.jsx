@@ -8,7 +8,7 @@ const IntroPost = () => {
       <img
         src={img}
         alt=""
-        className="rounded-full object-contain w-full h-full lg:col-span-6 xl:max-h-[500px] min-h-[200px] col-span-12 md:object-contain md:max-h-[500px] opacity-75"
+        className="rounded-full object-contain w-full h-full lg:col-span-6 xl:max-h-[500px] min-h-[200px] col-span-12 md:object-contain md:max-h-[500px] opacity-95"
       />
       <div className="flex flex-col items-center justify-center col-span-12 lg:col-span-6">
         <h4 className="text-accent instagram-headline font-bold">
@@ -24,9 +24,9 @@ const IntroPost = () => {
 
         <a
           href=" https://github.com/gleidsonmt"
-          className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out "
+          className="h-full flex p-4 text-gray-600 font-bold text-2xl cursor-pointer items-center gap-2 hover:scale-110 transition-all duration-100 ease-in-out border-gray-600 border-2 rounded-lg mt-10"
         >
-          <GrGithub className="text-gray-600" />
+          <GrGithub className="text-gray-600 " />
           See More
         </a>
       </div>
